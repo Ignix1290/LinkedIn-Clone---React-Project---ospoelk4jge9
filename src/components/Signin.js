@@ -1,9 +1,9 @@
+
 import React, { useRef } from "react";
 import "../styles/Login.css";
-import { FcGoogle } from "react-icons/fc";
 import { NavLink, Navigate, useNavigate } from "react-router-dom";
 
-function Login(){
+const Signin = (props) => {
 
     const emailInput = useRef();
     const passwordInput = useRef();
@@ -14,15 +14,12 @@ function Login(){
 
     const HandleSubmit = (e)=>{
         e.preventDefault();
-        console.log(emailInput.current.value)
-        if(emailInput.current.value !== "" && passwordInput.current.value != "")
+        if(emailInput.current.value == getEmail && passwordInput.current.value == getPassword)
         {
-            localStorage.setItem("emailData",emailInput.current.value);
-            localStorage.setItem("passwordData",passwordInput.current.value);
-            console.log("Sign up successfull");
-            navigate("/");
-            console.log("It works");
+            props.setLoggedIn(true);
+            navigate("/home");
         }
+        console.log("It works");
     }
 
     return(
@@ -35,10 +32,9 @@ function Login(){
                   Email or Phone Number <input type="text" ref={emailInput}></input>
                   Password (6 or more characters)<input type="password" ref={passwordInput}></input>
                   <span>By clicking Agree & Join, you agree to LinkedIn<span className="colourful">User Agreement, Privacy Policy</span> and <span className="colourful">Cookie Policy.</span></span>
-                  <button type="submit" onClick={HandleSubmit}>Agree & Join</button>
+                  <button type="submit" onClick={HandleSubmit}>Login</button>
                   <div className="bottom">
-                    <button type="submit" className="SignUp"><FcGoogle></FcGoogle>Sign up with Google</button>
-                    <p>Already on LinkedIn? <NavLink to="/"><span className="SignIn">Sign in</span></NavLink></p>
+                    <p>New to LinkedIn? <NavLink to="/signup"><span className="SignIn">Sign Up</span></NavLink> </p>
                   </div>
                 </div>
             </form>
@@ -46,6 +42,7 @@ function Login(){
             <span className="afterForm">Looking to create a page for a business? <span className="getHelp">Get help</span></span>
         </div>
     )
+
 }
 
-export default Login;
+export default Signin;

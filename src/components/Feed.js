@@ -1,18 +1,32 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "../styles/Feed.css";
 import Post from "./Post";
 import { FaUserCircle } from "react-icons/fa";
 import "../styles/pic.jpg";
 
 function Feed(){
+
+    const newPost = useRef();
+    const [posts, setPosts] = useState([]);
+    let postTemplate = {
+        name: "Samuel Lakra",
+        description: "LinkedIn Clone"
+    }
+
+    function addPost() {
+        postTemplate.message = newPost.current.value;
+        let updatedPosts = [...posts, postTemplate];
+        setPosts(postTemplate);
+    }
+
     return (
         <div className="feed">
             <div className="feed__input">
                 {/* <img src="https://cdn-icons-png.flaticon.com/128/552/552721.png"></img> */}
                 <FaUserCircle src="pic.jpg"/>
                 <form>
-                    <input type="text" placeholder="Post Something"></input>
-                    <input type="submit"></input>
+                    <input ref={newPost} type="text" placeholder="Post Something"></input>
+                    <button type="button" onClick={addPost}></button>
                 </form>
             </div>
 
@@ -39,7 +53,11 @@ function Feed(){
                     </div>
                 </div> 
             </div>
-            <Post name="Samuel Lakra" description="LinkedIn Clone" message="Inside Body" photoURL=""></Post>
+            {posts.map((post) => {
+                <Post name={post.name} description={post.description} message={post.message} photoURL=""></Post>
+            })
+            } 
+
         </div>
     )
 }
