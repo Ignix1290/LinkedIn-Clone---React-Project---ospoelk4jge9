@@ -1,16 +1,20 @@
-img{
-    height: 25px;
-    width: 25px;
-}
-svg{
+.feed__options .option img{
     height: 30px;
     width: 30px;
+    position: static;
+}
+.feed__input svg{
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
 }
 .feed{
     display: flex;
     flex: 0.6;
     flex-direction: column;
     margin: 0px 30px;
+    width: 350px;
+    box-sizing: border-box;
 }
 .feed .feed__input{
     display: flex;
@@ -33,16 +37,14 @@ svg{
     outline: 0;
     border: 1px solid #ccc;
 }
-.feed .feed__input form input[type='submit']{
-    display: none;
-}
+
 .feed__options{
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
     background-color: white;
-    margin-top: -15px;
+    margin-top: -25px;
     border-radius: 10px;
 }
 .feed__options .option{
@@ -57,8 +59,17 @@ svg{
 .feed__options .option div{
     display: flex;
     align-items: center;
-    margin: 0px 40px 0px 40px;
+    justify-content: space-between;
+    border-radius: 5px;
 }
 .feed__options .option div:hover{
     background-color: #eee;
+}
+.feed__input button{
+    width: 50px;
+    background-color: rgb(30, 148, 245);
+}
+.option span{
+    margin: 20px;
+    font-size: 15px;
 }

@@ -18,6 +18,9 @@
     height: 15px;
 
 }
+.widget__header svg:hover{
+    cursor: pointer;
+}
 ul.widget__options{
     margin: 0px;
     padding: 0px;

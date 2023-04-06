@@ -1,10 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/App.css';
-import Feed from './Feed';
-import Header from './Header';
-import Sidebar from './Sidebar';
-import Widget from './Widget';
-import Login from './Login';
+import Signup from './Signup';
 import { Routes, Route } from 'react-router-dom';
 import Signin from './Signin';
 import Home from './Home';
@@ -25,16 +21,9 @@ const App = () => {
     <div className='body'>
       <Routes>
         <Route path="/" element={<Signin setLoggedIn = {setLoggedIn} />} />
-        <Route path="/signup" element={<Login  />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/signup" element={<Signup/>} />
+        <Route path="/home" element={<Home/>} />
       </Routes>
-      {/* <Login></Login> */}
-      {/* <Header></Header>
-      <div className='app_body'>
-        <Sidebar></Sidebar>  
-        <Feed></Feed>
-        <Widget></Widget>
-      </div> */}
     </div>
   )
 }

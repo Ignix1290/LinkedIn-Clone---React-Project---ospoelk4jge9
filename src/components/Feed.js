@@ -23,10 +23,10 @@ function Feed(){
         <div className="feed">
             <div className="feed__input">
                 {/* <img src="https://cdn-icons-png.flaticon.com/128/552/552721.png"></img> */}
-                <FaUserCircle src="pic.jpg"/>
+                <FaUserCircle/>
                 <form>
                     <input ref={newPost} type="text" placeholder="Post Something"></input>
-                    <button type="button" onClick={addPost}></button>
+                    <button type="button" onClick={addPost}>POST</button>
                 </form>
             </div>
 

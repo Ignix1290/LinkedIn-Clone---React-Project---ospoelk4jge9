@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
-import "../styles/Login.css";
+import "../styles/Signup.css";
 import { FcGoogle } from "react-icons/fc";
 import { NavLink, Navigate, useNavigate } from "react-router-dom";
 
-function Login(){
+function Signup(){
 
     const emailInput = useRef();
     const passwordInput = useRef();
@@ -48,4 +48,4 @@ function Login(){
     )
 }
 
-export default Login;
+export default Signup;

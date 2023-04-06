@@ -1,6 +1,6 @@
 
 import React, { useRef } from "react";
-import "../styles/Login.css";
+import "../styles/Signup.css";
 import { NavLink, Navigate, useNavigate } from "react-router-dom";
 
 const Signin = (props) => {
