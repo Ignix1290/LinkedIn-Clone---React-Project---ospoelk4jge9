@@ -105,3 +105,6 @@
 .header__left .header__search{
     margin-left: -80px;
 }
+.header__right:first-child{
+    color: black;
+}

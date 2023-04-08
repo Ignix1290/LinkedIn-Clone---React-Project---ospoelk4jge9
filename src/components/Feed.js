@@ -15,8 +15,10 @@ function Feed(){
 
     function addPost() {
         postTemplate.message = newPost.current.value;
+        // posts.push(postTemplate);
         let updatedPosts = [...posts, postTemplate];
-        setPosts(postTemplate);
+        setPosts(updatedPosts);
+        console.log(posts);
     }
 
     return (
@@ -53,10 +55,12 @@ function Feed(){
                     </div>
                 </div> 
             </div>
-            {posts.map((post) => {
-                <Post name={post.name} description={post.description} message={post.message} photoURL=""></Post>
+            <div>
+            {posts.map((post,index) => {
+               return  <Post key={index} name={post.name} description={post.description} message={post.message}></Post>
             })
-            } 
+            }
+            </div>
 
         </div>
     )

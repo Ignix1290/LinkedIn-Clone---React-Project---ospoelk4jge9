@@ -6,13 +6,13 @@ function Sidebar(){
     return(
         <div className="sidebar">
             <div className="sidebar__profile">
-            <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"></img>
+            
 
                 <div className="profile__details">
-               
+                <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"></img>
                     {/* <img src="https://cdn-icons-png.flaticon.com/128/552/552721.png"></img> */}
                     <FaUserCircle></FaUserCircle>
-                    <h4>Samuel Lakra</h4>
+                    <h4>{localStorage.getItem("emailData")}</h4>
                     <p>Student</p>
                 </div>
 

@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Post.css";
 import { FaLocationArrow } from "react-icons/fa";
 import { AiTwotoneLike } from "react-icons/ai";
 import { BiCommentDetail } from "react-icons/bi";
 import { BsFillShareFill } from "react-icons/bs";
 import { FaUserCircle } from "react-icons/fa";
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 
 function Post(props){
+    const [likeIcon,setLikeIcon] = useState('dislike');
+    function likeFunc(){
+        if(likeIcon=="dislike"){
+            setLikeIcon('like');
+        }
+        else{
+            setLikeIcon('dislike');
+        }
+    }
     return(
         <div className="posts">
             <div className="post__header">
@@ -21,7 +31,7 @@ function Post(props){
                 </div>
 
                 <div className="post__headerRight">
-                    <span><b>:</b></span>
+                    <span><BsThreeDotsVertical/></span>
                 </div>
             </div>
             
@@ -31,7 +41,9 @@ function Post(props){
 
             <div className="post__footer">
                 <div className="post__footer__options">
+                    <div className={likeIcon} onClick={likeFunc}>
                     <AiTwotoneLike></AiTwotoneLike>
+                    </div>
                     {/* <img src="https://cdn-icons-png.flaticon.com/128/535/535190.png"></img> */}
                     <span>Like</span>
                 </div>
