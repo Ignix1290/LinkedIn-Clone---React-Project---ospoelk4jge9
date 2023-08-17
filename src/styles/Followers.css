@@ -1,0 +1,66 @@
+.followers_feed_body{
+    background-color: white;
+    height: 570px;
+    width: 750px;
+    margin-left: 240px;
+    border-radius: 10px;
+    margin-top: 30px
+}
+.followers_header{
+    border-bottom: 1px solid #eaeaea;
+    height: 48px;
+    display: flex;
+    justify-content: flex-start;
+}
+.followers_header > p{
+    margin-left: 25px;
+    font-size: 19px;
+}
+.followers_below_header{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #e0e0e0;
+}
+.followers_below_header > p{
+    margin-left: 25px;
+}
+.followers_below_header > p:hover{
+    cursor: pointer;
+}
+.Followers_page_button{
+    margin-top: 38px;
+    border-radius: 35px;
+    border: 1px solid rgb(28, 70, 183);
+    background-color: white;
+    color: rgb(28, 70, 183);
+    width: 13vw;
+    height: 35px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Followers_page_button:hover{
+    border: 2px solid rgb(28, 70, 183);
+    background-color: rgb(233, 237, 241);
+    cursor: pointer;
+}
+.followers_content{
+    padding-left: 253px;
+    padding-top: 65px;
+}
+.followers_content > h2{
+    margin-left: -23px;
+    font-weight: normal;
+}
+.followers_content > p{
+    width: 286px;
+    margin-left: -23px;
+}
+.followers_widget{
+    height: 253px;
+    width: 287px;
+    margin-left: 793px;
+    margin-top: -522px;
+    border-top: 1px solid #dedede;
+}

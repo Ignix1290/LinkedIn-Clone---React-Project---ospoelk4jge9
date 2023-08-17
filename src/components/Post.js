@@ -18,6 +18,14 @@ function Post(props){
             setLikeIcon('dislike');
         }
     }
+    // const [count, setCount] = useState(0);
+
+    // function likeFunc(){
+    //     setCount(count+1);
+    // }
+    function commentFunction(props){
+        setCommentsCount(commentsCount+1);
+    }
     return(
         <div className="posts">
             <div className="post__header">
@@ -44,27 +52,23 @@ function Post(props){
                     <div className={likeIcon} onClick={likeFunc}>
                     <AiTwotoneLike></AiTwotoneLike>
                     </div>
-                    {/* <img src="https://cdn-icons-png.flaticon.com/128/535/535190.png"></img> */}
                     <span>Like</span>
                 </div>
 
-                <div className="post__footer__options">
+                <div className="post__footer__options" onClick={commentFunction}>
                     <BiCommentDetail></BiCommentDetail>
-                    {/* <img src="https://cdn-icons-png.flaticon.com/128/3193/3193061.png"></img> */}
                     <span>Comment</span>
                 </div>
 
-                <div className="post__footer__options">
+                {/* <div className="post__footer__options">
                     <BsFillShareFill></BsFillShareFill>
-                    {/* <img src="https://cdn-icons-png.flaticon.com/128/929/929539.png"></img> */}
                     <span>Share</span>
                 </div>
 
                 <div className="post__footer__options">
                     <FaLocationArrow></FaLocationArrow>
-                    {/* <img src="https://cdn-icons-png.flaticon.com/128/1933/1933005.png"></img> */}
                     <span>Send</span>
-                </div>
+                </div> */}
             </div>
         </div>
     )

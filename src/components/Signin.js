@@ -24,7 +24,7 @@ const Signin = (props) => {
 
     return(
         <div className="login_info">
-            <img src="https://1000logos.net/wp-content/uploads/2023/01/LinkedIn-logo.png"></img>
+            <img className="linkedin_logo" src="https://1000logos.net/wp-content/uploads/2023/01/LinkedIn-logo.png"></img>
             <h1>Make the most of your professional life</h1>
             <div className="form_body">
             <form>

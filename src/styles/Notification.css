@@ -1,0 +1,77 @@
+.notification_sidebar{
+    background-color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    left: 236px;
+    top: 10px;
+    padding: 10px;
+}
+.coloured{
+    color: rgb(28, 70, 183);
+    padding-top: 20px;
+}
+.coloured:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.notification_body{
+    display: flex;
+    flex-direction: row;
+}
+.notification_feed{
+    background-color: white;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 267px;
+    width: 510px;
+    border-radius: 10px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+}
+.notification_about{
+    position: relative;
+    left: 280px;
+    top: 20px;
+    margin-left: 15px;
+    margin-top: -8px;
+    border-top: 1px solid #ccc;
+}
+.notification_feed > img{
+    height: 260px;
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 106px;
+}
+.notification_feed > h2{
+    margin-top: 16px;
+    font-weight: normal;
+}
+.notification_feed > p{
+    margin-top: 0px;
+}
+.home_button{
+    margin-top: 10px;
+    border-radius: 35px;
+    border: 1px solid rgb(28, 70, 183);
+    background-color: white;
+    color: rgb(28, 70, 183);
+    width: 8vw;
+    height: 30px;
+    margin-left: 185px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_button:hover{
+    border: 2px solid rgb(28, 70, 183);
+    background-color: rgb(233, 237, 241);
+    cursor: pointer;
+}
+.loader{
+    margin-top: 150px;
+    margin-left: 700px;
+}

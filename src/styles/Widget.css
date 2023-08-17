@@ -12,6 +12,7 @@
 }
 .widget__header > h4{
     margin: 0px;
+    font-weight: normal;
 }
 .widget__header svg{
     /* font-size: 18px; */

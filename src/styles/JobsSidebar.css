@@ -1,0 +1,149 @@
+.jobs_sidebar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 237px;
+}
+.jobs_sidebar_top{
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+    height: 280px;
+    width: 234px;
+    position: fixed;
+    top: 83px;
+}
+.jobs_sidebar_top p{
+    padding: 0;
+    margin-left: 0;
+    padding-left: 30px;
+    display: flex;
+    color: rgb(73, 87, 101);
+    font-size: large;
+}
+.jobs_sidebar_top p:hover{
+    background-color: #f3f2ef;
+    cursor: pointer;
+}
+.jobs_sidebar_bottom{
+    position: fixed;
+    top: 380px;
+}
+.jobs_sidebar_bottom h4{
+    margin-left: 2px;
+    border-radius: 35px;
+    border: 1px solid rgb(28, 70, 183);
+    color: rgb(28, 70, 183);
+    width: 15vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+}
+.jobs_sidebar_bottom h4:hover{
+    border: 2px solid rgb(28, 70, 183);
+    background-color: rgb(202, 209, 227);
+    cursor: pointer;
+}
+.jobs_sidebar svg{
+    margin-right: 12px;
+}
+.job_alert_modal_activated{
+    scale: 1;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    /* opacity: 0.7; */
+    z-index: 11;
+}
+.job_alert_modal_deactivated{
+    scale: 0;
+}
+.job_alert_body{
+    height: 460px;
+    width: 550px;
+    background-color: white;
+    border-radius: 10px;
+    /* position: absolute; */
+    /* top: 40px;
+    left: 440px; */
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+.job_alert_header{
+    border-bottom: 1px solid #d3d3d3;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.job_alert_header > h2{
+    font-weight: normal;
+    padding-bottom: 25px;
+}
+.job_alert_header > svg{
+    padding: 5px;
+    height: 22px;
+    width: 25px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+}
+.job_alert_header > svg:hover{
+    cursor: pointer;
+    background-color: #f3f2ef;
+}
+.search_for_jobs{
+    border-radius: 35px;
+    border: 1px solid rgb(28, 70, 183);
+    background-color: white;
+    color: rgb(28, 70, 183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    width: 128px;
+    height: 30px;
+}
+.search_for_jobs:hover{
+    border: 2px solid rgb(28, 70, 183);
+    background-color: rgb(233, 237, 241);
+    cursor: pointer;
+}
+.job_alert_content{
+    margin-left: 120px;
+}
+.job_alert_footer{
+    height: 62px;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    margin-top: 15px;
+}
+.done_button{
+    background-color: rgb(28, 70, 183);
+    border-radius: 20px;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 25px;
+    font-weight: bold;
+    margin-left: 505px;
+}
+.done_button:hover{
+    cursor: pointer;
+}
+.job_alert_content >h2{
+    margin-left: 18px;
+}
+.job_alert_content >p{
+    width: 309px;
+}

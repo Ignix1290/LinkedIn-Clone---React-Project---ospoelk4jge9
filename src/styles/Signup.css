@@ -5,7 +5,6 @@
     height: 100vh;
     width: 100vw;
     background-color: #f3f2ef;
-    position: relative;
     flex-direction: column;
 }
 .form_body{
@@ -43,12 +42,10 @@ input{
     margin: 10px;
     border-radius: 5px;
 }
-img{
-    top: 1%;
-    left:10%;
+.linkedin_logo{
     width: 140px;
     height: 100px;
-    position: absolute;
+
 }
 .colourful{
     color: rgb(28, 70, 183);
@@ -82,7 +79,7 @@ span{
     text-decoration: underline;
     cursor: pointer;
 }
-svg{
+.google_logo{
     height: 20px;
 }
 .bottom{
@@ -107,4 +104,7 @@ svg{
     color: black;
     font-size: 16px;
     margin-top: 10px;
+}
+.error{
+    color: red;
 }

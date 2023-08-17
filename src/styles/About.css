@@ -1,0 +1,39 @@
+.container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1px;
+    width: 250px;
+    height: 125px;
+}
+.logo{
+    margin-left: 30px;
+}
+.inner_container{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 60px;
+    height: 200px;
+}
+.container > span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.about4{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.about7{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.about8{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.container > span{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}

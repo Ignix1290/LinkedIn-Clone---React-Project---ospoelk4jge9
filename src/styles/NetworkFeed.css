@@ -1,0 +1,121 @@
+.network_feed_body{
+    height: 600px;
+    width: 660px;
+    margin-left: 303px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.network_feed_header{
+    height: 50px;
+    width: 660px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.network_feed_bottom{
+    margin-top: 20px;
+    height: 700px;
+    width: 660px;
+    background-color: white;
+    border-radius: 10px;
+}
+.invitaions{
+    margin-left: 20px;
+    color: #686868;
+}
+.manage{
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #686868;
+}
+.manage:hover{
+    background-color: #e8e8e8;
+    cursor: pointer;
+}
+.network_bottom_header{
+    display: flex;
+    justify-content: space-between;
+}
+.header_left{
+    margin-left: 20px;
+    color: #686868;
+}
+.header_right{
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #686868;
+}
+.header_right:hover{
+    background-color: #e8e8e8;
+    cursor: pointer;
+}
+.network_feed_cards{
+    height: 540px;
+    width: 660px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    height: 250px;
+    width: 180px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+}
+.card:hover{
+    box-shadow: 1px 2px 5px #686868;
+    cursor: pointer;
+}
+.card .name:hover{
+    text-decoration: underline;
+}
+.connect{
+    margin-top: 30px;
+    border-radius: 35px;
+    border: 1px solid rgb(28, 70, 183);
+    background-color: white;
+    color: rgb(28, 70, 183);
+    width: 8vw;
+    height: 30px;
+    margin-left: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.connect:hover{
+    border: 2px solid rgb(28, 70, 183);
+    background-color: rgb(233, 237, 241);
+    cursor: pointer;
+}
+.company_name{
+    color: #8b8b8b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -55px;
+}
+.background_img{
+    border-radius: 10px 10px 0 0;
+    width: 180px;
+    height: 70px;
+}
+.profile_img{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    margin-left: 40px;
+    position: relative;
+    top: -51px;
+}

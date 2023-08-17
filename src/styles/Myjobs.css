@@ -1,0 +1,117 @@
+.myjobs_sidebar_body{
+    height: 83px;
+    width: 200px;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 237px;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.myjobs_sidebar_body > p{
+    border-bottom: 1px solid #dfdfdf;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+.myjobs_sidebar_body > p > svg{
+    margin-right: 10px;
+}
+.myjobs_feed_body{
+    height: 540px;
+    width: 500px;
+    background-color: white;
+    margin-top: -92px;
+    margin-left: 477px;
+    border-radius: 10px;
+}
+.myjobs_feed_header{
+
+    padding: 1px 0 0 25px;
+    height: 110px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.myjobs_feed_header > h2{
+    font-weight: normal;
+}
+.applied{
+    border-radius: 35px;
+    border: 1px solid rgb(0, 124, 17);
+    background-color: rgb(0, 124, 17);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 32px;
+}
+.applied:hover{
+    cursor: pointer;
+}
+.company_post{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.company_post:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.myjobs_feed_content > svg{
+    margin-left: 450px;
+    /* margin-top: 0px; */
+    position: relative;
+    top: -82px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.myjobs_feed_content > svg:hover{
+    cursor: pointer;
+    background-color: #e8e8e8;
+}
+.myjobs_widget_body{
+    background-color: white;
+    height: 370px;
+    width: 300px;
+    margin-left: 1005px;
+    margin-top: -540px;
+    border-radius: 10px;
+}
+.myjobs_widget_header{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.myjobs_widget_content{
+    display: flex;
+    flex-direction: row;
+}
+.myjobs_widget_content:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.myjobs_widget_img{
+    height: 80px;
+    width: 100px;
+}
+.myjobs_widget_img > img{
+    height: 60px;
+    width: 70px;
+    margin: 8px 0 0 12px;
+}
+.myjobs_widget > p{
+    margin-left: 5px;
+}
+.myjobs_widget_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    border-radius: 0 0 10px 10px;
+}
+.myjobs_widget_footer:hover{
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+.myjobs_widget_footer > p{
+    color: #959595;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import '../styles/Header.css';
 import { AiFillHome } from "react-icons/ai";
 import { ImUsers } from "react-icons/im";
@@ -6,9 +6,15 @@ import { IoBriefcase } from "react-icons/io5";
 import { IoChatboxEllipses } from "react-icons/io5";
 import { AiFillBell } from "react-icons/ai";
 import { FaUserCircle } from "react-icons/fa";
+import { IoMdArrowDropdown } from "react-icons/io";
+import { NavLink } from "react-router-dom";
 
 
 function Header(){
+    const [menu, setMenu] = useState(false);
+    function handleClick(){
+        setMenu(!menu);
+    }
     return (
         <div className="header">
             <div className="header__left">
@@ -23,28 +29,45 @@ function Header(){
             </div>
             <div className="header__right">
                 <div className="header__icons">
-                    <AiFillHome></AiFillHome>
+                    <NavLink to="/home"><AiFillHome className="header_options"></AiFillHome></NavLink>
                     <p>Home</p>
                 </div>
                 <div className="header__icons">
-                    <ImUsers></ImUsers>
+                    <NavLink to="/network"><ImUsers className="header_options"></ImUsers></NavLink>
                     <p>My Network</p>
                 </div>
                 <div className="header__icons">
-                    <IoBriefcase></IoBriefcase>
+                    <NavLink to="/jobs"><IoBriefcase className="header_options"></IoBriefcase></NavLink>
                     <p>Jobs</p>
                 </div>
-                <div className="header__icons">
+                {/* <div className="header__icons">
                     <IoChatboxEllipses></IoChatboxEllipses>
                     <p>Messaging</p>
-                </div>
+                </div> */}
                 <div className="header__icons">
-                    <AiFillBell></AiFillBell>
+                    <NavLink to="/notification"><AiFillBell className="header_options"></AiFillBell></NavLink>
                     <p>Notifications</p>
                 </div>
-                <div className="header__icons">
+                <div className="header__icons" onClick={handleClick}>
                     <FaUserCircle></FaUserCircle>
-                    <p>Me</p>
+                    <p>Me</p><IoMdArrowDropdown></IoMdArrowDropdown>
+                    
+                </div>
+                <div className={menu===true?'activate':'deactivate'} id="dropDownMenu">
+                    <div className='head'>
+                       <FaUserCircle></FaUserCircle>
+                       <h2 id="name">{localStorage.getItem("emailData")}</h2>
+                       <h4 className="profile">View Profile</h4>
+                    </div>
+                    <div className="settings">
+                        <p>Settings & Privacy</p>
+                        <p>Help</p>
+                        <p>Language</p>
+                        <p>Post & Activity</p>
+                        <p>Job Posting Account</p>
+                        <NavLink to="/"><p className="signout">Sign Out</p></NavLink>
+                    </div>
+                    
                 </div>
                 
                 
