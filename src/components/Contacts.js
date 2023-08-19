@@ -4,6 +4,7 @@ import "../styles/Contacts.css";
 import { FcContacts } from "react-icons/fc";
 import About from "./About";
 import FadeLoader from "react-spinners/FadeLoader";
+import Footer from "./Footer";
 
 export default function Contacts(){
     const [loader, setLoader] = useState(false);
@@ -47,6 +48,10 @@ export default function Contacts(){
                </div>
             </div>
         </div>}
+        <div className="contact_footer">
+            <Footer></Footer>
+        </div>
+        
         </>
     )
 }

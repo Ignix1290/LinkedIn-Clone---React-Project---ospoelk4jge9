@@ -4,6 +4,7 @@ import "../styles/Connections.css";
 import { CiMenuKebab } from "react-icons/ci";
 import About from "./About";
 import FadeLoader from "react-spinners/FadeLoader";
+import Footer from "./Footer";
 
 export default function Connections(){
     const [lists, setLists] = useState([]);
@@ -67,6 +68,9 @@ export default function Connections(){
                 </div>
             </div>
         </div>}
+        <div className="connections_footer">
+            <Footer></Footer>
+        </div>
         </>
     )
 }

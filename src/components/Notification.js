@@ -13,6 +13,7 @@ import About from "./About";
 import "../styles/About.css";
 import Header from "./Header";
 import FadeLoader from "react-spinners/FadeLoader";
+import Footer from "./Footer";
 
 
 export default function Notification(){
@@ -49,9 +50,11 @@ export default function Notification(){
           </div>
           <div className="notification_about">
             <About></About>
-          </div>        
+          </div> 
+                
        </div>
        }
+       <Footer></Footer> 
     </div>
     )
 }

@@ -3,6 +3,7 @@ import Header from "./Header";
 import "../styles/Followers.css";
 import About from "./About";
 import FadeLoader from "react-spinners/FadeLoader";
+import Footer from "./Footer";
 
 export default function Followers(){
     const [loader, setLoader] = useState(false);
@@ -38,6 +39,9 @@ export default function Followers(){
                 </div>
             </div>
         </div>}
-        </>
+      
+            <Footer></Footer>
+    
+        </> 
     )
 }

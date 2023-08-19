@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import '../styles/NetworkSidebar.css';
 import About from "./About";
 import { BsPeopleFill } from "react-icons/bs";
@@ -13,6 +13,7 @@ import {useNavigate } from "react-router";
 
 export default function NetworkSidebar(){
     const navigate = useNavigate();
+    // const [popup, setpopup] = useState("off");
 
     function connectionFunction(){
         navigate("/connections");
@@ -37,15 +38,20 @@ export default function NetworkSidebar(){
                 <p onClick={contactFuntions}><MdPermContactCalendar></MdPermContactCalendar>Contacts</p>
                 <p onClick={followerFuntions}><FaUserAlt></FaUserAlt>Following & followers</p>
                 <p onClick={groupFuntions}><MdGroups></MdGroups>Groups</p>
-                <p><BsCalendarCheck></BsCalendarCheck>Events</p>
-                <p><RiPagesLine></RiPagesLine>Page</p>
-                <p><BsNewspaper></BsNewspaper>Newsletter</p>
-                <p><FaHashtag></FaHashtag>Hashtags</p>
+                <p className="events"><BsCalendarCheck></BsCalendarCheck>Events</p>
+                <p className="page"><RiPagesLine></RiPagesLine>Page</p>
+                <p className="news"><BsNewspaper></BsNewspaper>Newsletter</p>
+                <p className="hashtag"><FaHashtag></FaHashtag>Hashtags</p>
                 <span>Grow your network</span>
             </div>
             <div className="sidebar_bottom">
                 <About></About>
             </div>
+            {/* <div className={popup}>
+                <div className="coming_soon">
+                    <p>Coming Soon...</p>
+                </div>
+            </div> */}
         </div>
     )
 }

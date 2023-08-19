@@ -14,6 +14,7 @@ import JobsSidebar from "./JobsSidebar";
 import JobsWidget from "./JobsWidget";
 import JobsFeed from "./JobsFeed";
 import FadeLoader from "react-spinners/FadeLoader";
+import Footer from "./Footer";
 
 
 export default function Jobs(){
@@ -41,8 +42,11 @@ export default function Jobs(){
           <JobsSidebar></JobsSidebar>
           <JobsFeed></JobsFeed>
           <JobsWidget></JobsWidget>
+       </div>}
+       <div className="jobs_footer">
+       <Footer></Footer>
        </div>
-       }
+       
     </div>
     )
 }

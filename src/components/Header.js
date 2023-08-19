@@ -3,17 +3,34 @@ import '../styles/Header.css';
 import { AiFillHome } from "react-icons/ai";
 import { ImUsers } from "react-icons/im";
 import { IoBriefcase } from "react-icons/io5";
-import { IoChatboxEllipses } from "react-icons/io5";
 import { AiFillBell } from "react-icons/ai";
 import { FaUserCircle } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 
 function Header(){
     const [menu, setMenu] = useState(false);
     function handleClick(){
         setMenu(!menu);
+    }
+
+    const navigate = useNavigate();
+
+    function homeTabFunction(){
+        navigate("/home");
+    }
+
+    function networkTabFunction(){
+        navigate("/network");
+    }
+
+    function jobsTabFunction(){
+        navigate("/jobs");
+    }
+
+    function notificationTabFunction(){
+        navigate("/notification");
     }
     return (
         <div className="header">
@@ -28,24 +45,24 @@ function Header(){
 
             </div>
             <div className="header__right">
-                <div className="header__icons">
-                    <NavLink to="/home"><AiFillHome className="header_options"></AiFillHome></NavLink>
+                <div className="header__icons" onClick={homeTabFunction}>
+                    <AiFillHome></AiFillHome>
                     <p>Home</p>
                 </div>
-                <div className="header__icons">
-                    <NavLink to="/network"><ImUsers className="header_options"></ImUsers></NavLink>
+                <div className="header__icons" onClick={networkTabFunction}>
+                    <ImUsers></ImUsers>
                     <p>My Network</p>
                 </div>
-                <div className="header__icons">
-                    <NavLink to="/jobs"><IoBriefcase className="header_options"></IoBriefcase></NavLink>
+                <div className="header__icons" onClick={jobsTabFunction}>
+                    <IoBriefcase></IoBriefcase>
                     <p>Jobs</p>
                 </div>
                 {/* <div className="header__icons">
                     <IoChatboxEllipses></IoChatboxEllipses>
                     <p>Messaging</p>
                 </div> */}
-                <div className="header__icons">
-                    <NavLink to="/notification"><AiFillBell className="header_options"></AiFillBell></NavLink>
+                <div className="header__icons" onClick={notificationTabFunction}>
+                    <AiFillBell></AiFillBell>
                     <p>Notifications</p>
                 </div>
                 <div className="header__icons" onClick={handleClick}>

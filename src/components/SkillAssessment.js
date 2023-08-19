@@ -2,6 +2,7 @@ import React,{useState, useEffect} from "react";
 import Header from "./Header";
 import "../styles/SkillAssessment.css";
 import FadeLoader from "react-spinners/FadeLoader";
+import Footer from "./Footer";
 
 export default function SkillAssessment(){
     const [loader, setLoader] = useState(false);
@@ -73,6 +74,8 @@ export default function SkillAssessment(){
                 </div>
             </div>
         </div>}
+        <div className="skill_footer"><Footer></Footer></div>
+        
         </>
     )
 }

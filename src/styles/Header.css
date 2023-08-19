@@ -50,51 +50,34 @@
     margin-right: 330px;
     margin-bottom: 10px
 }
-.header__right div{
+.header__icons{
     display: flex;
     height: 50px;
    flex-direction: column;
     align-items: center;
     padding: 10px;
-    color: lightslategray;
     margin-top: 10px;
+    color: rgb(143, 149, 155);
 }
-.header__right div p{
-    margin: 0px;
+.header__icons:hover{
+    cursor: pointer;
+    color: black;
 }
-.header_options{
-    height: 28px;
+.header__icons > svg{
+    height: 25px;
     width: 25px;
     color: rgb(143, 149, 155);
 }
-.header_options:hover{
+.header__icons > svg:hover{
     color: black;
 }
-.header_options:active{
+.header__icons > p{
+    margin: 0px;
+}
+
+.header__icons:active{
     color: black;
 }
-/* .header__options{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px 15px;
-    font-size: small;
-    color: #565656;
-    cursor: pointer;
-    position: relative;
-}
-.header__options:first-child::before{
-    content: '';
-     position: absolute;
-     left: -10px;
-     right: -10px;
-     background-color: #333;
-     height: 1px;
-     bottom: 2px;
-}
-.header__options:first-child{
- color: #333;
-} */
 .header__logo{
     margin-right: 100px;
 }

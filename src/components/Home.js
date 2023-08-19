@@ -8,6 +8,7 @@ import { Navigate, redirect } from "react-router";
 import Signin from "./Signin";
 import '../styles/Home.css';
 import FadeLoader from "react-spinners/FadeLoader";
+import Footer from "./Footer";
 
 
 const Home = (props)=>{
@@ -37,8 +38,10 @@ const Home = (props)=>{
                 <Feed></Feed>
                 <Widget></Widget>
             </div>
-            </>
+            <Footer></Footer>
+        </>
         }
+        
         </>
     );
 }
