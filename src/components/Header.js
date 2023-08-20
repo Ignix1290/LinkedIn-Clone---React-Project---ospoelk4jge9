@@ -19,18 +19,22 @@ function Header(){
 
     function homeTabFunction(){
         navigate("/home");
+        document.getElementById("home_page").style.color = "black";
     }
 
     function networkTabFunction(){
         navigate("/network");
+        document.getElementById("network_page").style.color = "black";
     }
 
     function jobsTabFunction(){
         navigate("/jobs");
+        document.getElementById("jobs_page").style.color = "black";
     }
 
     function notificationTabFunction(){
         navigate("/notification");
+        document.getElementById("notification_page").style.color = "black";
     }
     return (
         <div className="header">
@@ -45,15 +49,15 @@ function Header(){
 
             </div>
             <div className="header__right">
-                <div className="header__icons" onClick={homeTabFunction}>
+                <div className="header__icons" onClick={homeTabFunction} id="home_page">
                     <AiFillHome></AiFillHome>
                     <p>Home</p>
                 </div>
-                <div className="header__icons" onClick={networkTabFunction}>
+                <div className="header__icons" onClick={networkTabFunction} id="network_page">
                     <ImUsers></ImUsers>
                     <p>My Network</p>
                 </div>
-                <div className="header__icons" onClick={jobsTabFunction}>
+                <div className="header__icons" onClick={jobsTabFunction} id="jobs_page">
                     <IoBriefcase></IoBriefcase>
                     <p>Jobs</p>
                 </div>
@@ -61,7 +65,7 @@ function Header(){
                     <IoChatboxEllipses></IoChatboxEllipses>
                     <p>Messaging</p>
                 </div> */}
-                <div className="header__icons" onClick={notificationTabFunction}>
+                <div className="header__icons" onClick={notificationTabFunction} id="notification_page">
                     <AiFillBell></AiFillBell>
                     <p>Notifications</p>
                 </div>

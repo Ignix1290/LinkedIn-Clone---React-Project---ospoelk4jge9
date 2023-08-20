@@ -53,10 +53,97 @@
     position: fixed;
     top: 484px;
 }
-/* .coming_soon{
+.events_popup{
+    background-color: white;
+    border: 1px solid #ccc;
+    height: 250px;
+    width: 409px;
+    position: absolute;
+    top: 230px;
+    margin-left: 560px;
+    z-index: 12;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.events_popup_activated{
+    scale: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 11;
+}
+.events_popup_deactivated{
+    scale: 0;
+}
+.events_popup > button{
+    margin-top: 30px;
+    border-radius: 35px;
+    border: 1px solid rgb(28, 70, 183);
+    background-color: white;
+    color: rgb(28, 70, 183);
+    width: 70px;
     height: 30px;
-    width: 100px;
-    background-color: orange;
-    margin-top: 10px;
-    margin-left: 10px;
-} */
+    margin-left: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.events_popup > button:hover{
+    border: 2px solid rgb(28, 70, 183);
+    background-color: rgb(233, 237, 241);
+    cursor: pointer;
+}
+.page_news_hashtag_activated{
+    scale: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 11;
+}
+.page_news_hashtag_deactivated{
+    scale: 0;
+}
+.page_news_hashtag{
+    background-color: white;
+    border: 1px solid #ccc;
+    height: 250px;
+    width: 420px;
+    position: absolute;
+    top: 230px;
+    margin-left: 560px;
+    z-index: 12;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page_news_hashtag > button{
+    margin-top: 30px;
+    border-radius: 35px;
+    border: 1px solid rgb(28, 70, 183);
+    background-color: white;
+    color: rgb(28, 70, 183);
+    width: 70px;
+    height: 30px;
+    margin-left: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.page_news_hashtag > button:hover{
+    border: 2px solid rgb(28, 70, 183);
+    background-color: rgb(233, 237, 241);
+    cursor: pointer;
+}

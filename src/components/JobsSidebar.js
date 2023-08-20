@@ -13,7 +13,8 @@ import { AiOutlineClose } from "react-icons/ai";
 
 export default function JobsSidebar(){
     const navigate = useNavigate();
-    const [jobAlertModal, setJobAlertModal] = useState("job_alert_modal_deactivated")
+    const [jobAlertModal, setJobAlertModal] = useState("job_alert_modal_deactivated");
+    const [jobSidebarPopup, setJobSidebarPopup] = useState("jobs_sidebar_popup_deactivated");
 
     function myjobsFunction(){
         navigate('/myjobs');
@@ -36,6 +37,15 @@ export default function JobsSidebar(){
         } 
     }
 
+    function jobsidebarpopupFunction(){
+        if(jobSidebarPopup==='jobs_sidebar_popup_deactivated'){
+            setJobSidebarPopup('jobs_sidebar_popup_activated');
+        }
+        else{
+            setJobSidebarPopup('jobs_sidebar_popup_deactivated');
+        }
+    }
+
     return(
         <>
         <div className="jobs_sidebar">
@@ -43,10 +53,10 @@ export default function JobsSidebar(){
                 <p onClick={myjobsFunction}><BsFillBookmarkFill></BsFillBookmarkFill>My jobs</p>
                 <p onClick={jobalertmodalFunction}><BsBellFill></BsBellFill>Job alerts</p>
                 <p onClick={skillsFunction}><BsClipboard2Check></BsClipboard2Check>Skill Assessment</p>
-                <p><SiGooglesheets></SiGooglesheets>Interview prep</p>
-                <p><BiFileBlank></BiFileBlank>Resume Builder</p>
-                <p><BsYoutube></BsYoutube>Job seeker guidance</p>
-                <p><IoSettingsSharp></IoSettingsSharp>Application settings</p>
+                <p onClick={jobsidebarpopupFunction}><SiGooglesheets></SiGooglesheets>Interview prep</p>
+                <p onClick={jobsidebarpopupFunction}><BiFileBlank></BiFileBlank>Resume Builder</p>
+                <p onClick={jobsidebarpopupFunction}><BsYoutube></BsYoutube>Job seeker guidance</p>
+                <p onClick={jobsidebarpopupFunction}><IoSettingsSharp></IoSettingsSharp>Application settings</p>
             </div>
             <div className="jobs_sidebar_bottom">
                 <h4><BiEdit></BiEdit>Post a free job</h4>
@@ -68,6 +78,12 @@ export default function JobsSidebar(){
                     <p>Job recommendation</p>
                 </div>
                 <button type="button"className="done_button" onClick={jobalertmodalFunction}>Done</button>
+            </div>
+        </div>
+        <div className={jobSidebarPopup}>
+            <div className="jobs_sidebar_popup">
+                <h1>This feature is coming soon!!!</h1>
+                <button onClick={jobsidebarpopupFunction}>OKAY</button>
             </div>
         </div>
         </>

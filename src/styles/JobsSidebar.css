@@ -147,3 +147,50 @@
 .job_alert_content >p{
     width: 309px;
 }
+.jobs_sidebar_popup_activated{
+    scale: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 11;
+}
+.jobs_sidebar_popup_deactivated{
+    scale: 0;
+}
+.jobs_sidebar_popup{
+    background-color: white;
+    border: 1px solid #ccc;
+    height: 250px;
+    width: 420px;
+    position: absolute;
+    top: 230px;
+    margin-left: 560px;
+    z-index: 12;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.jobs_sidebar_popup > button{
+    margin-top: 30px;
+    border-radius: 35px;
+    border: 1px solid rgb(28, 70, 183);
+    background-color: white;
+    color: rgb(28, 70, 183);
+    width: 70px;
+    height: 30px;
+    margin-left: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.jobs_sidebar_popup > button:hover{
+    border: 2px solid rgb(28, 70, 183);
+    background-color: rgb(233, 237, 241);
+    cursor: pointer;
+}

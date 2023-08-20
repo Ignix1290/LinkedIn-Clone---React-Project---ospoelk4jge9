@@ -10,6 +10,7 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 
 function Post(props){
     const [likeIcon,setLikeIcon] = useState('dislike');
+    const [comment, setComment] = useState("comment_box_deactivated");
     function likeFunc(){
         if(likeIcon=="dislike"){
             setLikeIcon('like');
@@ -24,9 +25,10 @@ function Post(props){
     //     setCount(count+1);
     // }
     function commentFunction(props){
-        setCommentsCount(commentsCount+1);
+        setComment("comment_box_activated");
     }
     return(
+        <>
         <div className="posts">
             <div className="post__header">
                 <div className="post__headerLeft">
@@ -38,9 +40,9 @@ function Post(props){
                     </div>
                 </div>
 
-                <div className="post__headerRight">
+                {/* <div className="post__headerRight">
                     <span><BsThreeDotsVertical/></span>
-                </div>
+                </div> */}
             </div>
             
             <div className="post__body">
@@ -60,17 +62,16 @@ function Post(props){
                     <span>Comment</span>
                 </div>
 
-                {/* <div className="post__footer__options">
-                    <BsFillShareFill></BsFillShareFill>
-                    <span>Share</span>
-                </div>
-
-                <div className="post__footer__options">
-                    <FaLocationArrow></FaLocationArrow>
-                    <span>Send</span>
-                </div> */}
             </div>
         </div>
+        <div className={comment}>
+            <div className="comment_box">
+             <FaUserCircle/>
+             <input placeholder="Add a comment..."></input>
+             <button type="button" className="post_comment_button">Post</button>
+            </div>
+        </div>
+        </>
     )
 }
 

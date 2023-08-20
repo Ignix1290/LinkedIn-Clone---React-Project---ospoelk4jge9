@@ -74,8 +74,7 @@
 .header__icons > p{
     margin: 0px;
 }
-
-.header__icons:active{
+#home_page:active{
     color: black;
 }
 .header__logo{
