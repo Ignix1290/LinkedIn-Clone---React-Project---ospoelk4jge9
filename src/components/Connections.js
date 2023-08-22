@@ -50,19 +50,19 @@ export default function Connections(){
                             </div>
                             <div className="connections_content_button">
                                 <button className="message">Message</button>
-                                <CiMenuKebab></CiMenuKebab>
+                                {/* <CiMenuKebab></CiMenuKebab> */}
                             </div>
                         </div>
                     )
                 })}
             </div>
             <div className="connections_widget">
-                <div className="connections_widget_content">
+                {/* <div className="connections_widget_content">
                     <h3>Add personal contacts</h3>
                     <p>We’ll periodically import and store your contacts to help you and others connect. You choose who to connect to and who to invite.</p>
                     <input placeholder="Your email address"></input>
                     <button className="continue">Continue</button>
-                </div>
+                </div> */}
                 <div className="below_connections_widget">
                     <About></About>
                 </div>

@@ -43,7 +43,7 @@ export default function MyJobs(){
                             <p className="days">Applied 11mo ago</p>
                         </div>
                     </div>
-                    <CiMenuKebab></CiMenuKebab>
+                    {/* <CiMenuKebab></CiMenuKebab> */}
                     <div className="Jobs_feed_recommendation">
                         <div className="company_logo">
                             <img src="https://media.licdn.com/dms/image/C4D0BAQFPP1NRP4F5dQ/company-logo_100_100/0/1656657976685?e=1700092800&v=beta&t=GuwWWNId3zCtP0iY-3LoR04QCE69F1LDhORSO3raFjI"></img>
@@ -55,7 +55,7 @@ export default function MyJobs(){
                             <p className="days">Applied 1yr ago</p>
                         </div>
                     </div>
-                    <CiMenuKebab></CiMenuKebab>
+                    {/* <CiMenuKebab></CiMenuKebab> */}
                     <div className="Jobs_feed_recommendation">
                         <div className="company_logo">
                             <img src="https://media.licdn.com/dms/image/C4E0BAQE0UPACNUrv3g/company-logo_100_100/0/1674757963152?e=1700092800&v=beta&t=rTkeGONKhfGpSd3QDbnIWk56ZW131jxwO0zAcy5rwJ8"></img>
@@ -67,7 +67,7 @@ export default function MyJobs(){
                             <p className="days">Applied 1yr ago</p>
                         </div>
                     </div>
-                    <CiMenuKebab></CiMenuKebab>
+                    {/* <CiMenuKebab></CiMenuKebab> */}
                 </div>
             </div>
             <div className="myjobs_widget_body">

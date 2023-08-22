@@ -74,7 +74,7 @@ function Feed(){
             </div>
             <div>
             {posts.map((post,index) => {
-               return  <Post key={index} name={post.name} description={post.description} message={post.message}></Post>
+               return  <Post key={index} name={localStorage.getItem("emailData")} description={post.description} message={post.message}></Post>
             })
             }
             </div>

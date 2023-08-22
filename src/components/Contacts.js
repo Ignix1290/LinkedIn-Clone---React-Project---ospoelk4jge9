@@ -8,6 +8,7 @@ import Footer from "./Footer";
 
 export default function Contacts(){
     const [loader, setLoader] = useState(false);
+    const [syncContacts, setSyncContacts] = useState("contacts_synced_deactivated")
 
     useEffect(()=>{
       setLoader(true);
@@ -15,6 +16,15 @@ export default function Contacts(){
         setLoader(false);
       },1000)
     },[])
+
+    function syncContactFuntion(){
+        if(syncContacts==="contacts_synced_deactivated"){
+            setSyncContacts("contacts_synced_activated");
+        }
+        else{
+            setSyncContacts("contacts_synced_deactivated");
+        }
+    }
     return(
         <>
         <Header></Header>
@@ -34,22 +44,27 @@ export default function Contacts(){
                     <div className="contact_feed_content">
                         <h2>Connect with people you know, fast</h2>
                         <p>Importing contacts helps you keep in touch with your connections.</p>
-                        <p className="contact_link">Sync your contacts</p>
+                        <p className="contact_link" onClick={syncContactFuntion}>Sync your contacts</p>
                     </div>
                 </div>
             </div>
             <div className="contact_widget">
-               <button className="contact_buttons">Add more contacts</button>
+               {/* <button className="contact_buttons">Add more contacts</button>
                <button className="contact_buttons">Export contacts</button>
-               <button className="contact_buttons">Manage synced contacts</button>
-               <div
-               className="bottom_contact_widget">
+               <button className="contact_buttons">Manage synced contacts</button> */}
+               <div className="bottom_contact_widget">
                 <About></About>
                </div>
             </div>
         </div>}
         <div className="contact_footer">
             <Footer></Footer>
+        </div>
+        <div className={syncContacts}>
+            <div className="contacts_synced_popup">
+                <h1>Contacts synced</h1>
+                <button onClick={syncContactFuntion}>OKAY</button>
+            </div>
         </div>
         
         </>

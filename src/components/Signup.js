@@ -10,8 +10,8 @@ function Signup(){
     const passwordInput = useRef();
     const navigate = useNavigate();
 
-    const getEmail = localStorage.getItem("emailData");
-    const getPassword = localStorage.getItem("passwordData");
+    // const getEmail = localStorage.getItem("emailData");
+    // const getPassword = localStorage.getItem("passwordData");
 
     
 
@@ -45,7 +45,7 @@ function Signup(){
                   <span>By clicking Agree & Join, you agree to LinkedIn<span className="colourful">User Agreement, Privacy Policy</span> and <span className="colourful">Cookie Policy.</span></span>
                   <button type="submit" onClick={HandleSubmit}>Agree & Join</button>
                   <div className="bottom">
-                    <button type="submit" className="SignUp"><FcGoogle className="google_logo"></FcGoogle>Sign up with Google</button>
+                    {/* <button type="submit" className="SignUp"><FcGoogle className="google_logo"></FcGoogle>Sign up with Google</button> */}
                     <p>Already on LinkedIn? <NavLink to="/"><span className="SignIn">Sign in</span></NavLink></p>
                   </div>
                 </div>

@@ -3,14 +3,25 @@ import '../styles/JobsFeed.css';
 import { BiSearchAlt2 } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { BsBookmark } from "react-icons/bs";
+import { AiFillCheckCircle } from "react-icons/ai";
 
 
 export default function JobsFeed(){
     const [ suggestions, setSuggestions] = useState("jobs_feed_suggestions_activated");
+    const [savedJobs, setSavedJobs] = useState("saved_jobs_deactivated");
 
     function closeSuggestions(e){
          setSuggestions("jobs_feed_suggestions_deactivated");
          document.getElementById("jobs_feed_bottom").style.marginTop = "-83px";
+    }
+
+    function savedJobFunction(){
+        if(savedJobs==='saved_jobs_deactivated'){
+            setSavedJobs("saved_jobs_activated");
+        }
+        else{
+            setSavedJobs('saved_jobs_deactivated');
+        }
     }
     return(
         <div className="jobs_feed">
@@ -44,7 +55,7 @@ export default function JobsFeed(){
                         <p className="location">Gurgaon, Haryana, India (Remote)</p>
                         <p className="days">5 days ago</p>
                     </div>
-                    <BsBookmark></BsBookmark>
+                    <BsBookmark onClick={savedJobFunction}></BsBookmark>
                 </div>
                 <div className="Jobs_feed_recommendation">
                     <div className="company_logo">
@@ -56,7 +67,7 @@ export default function JobsFeed(){
                         <p className="location">Gurugram, Haryana, India (Remote)</p>
                         <p className="days">promoted</p>
                     </div>
-                    <BsBookmark></BsBookmark>
+                    <BsBookmark onClick={savedJobFunction}></BsBookmark>
                 </div>
                 <div className="Jobs_feed_recommendation">
                     <div className="company_logo">
@@ -68,7 +79,7 @@ export default function JobsFeed(){
                         <p className="location">Gurugram, Haryana, India (On-site)</p>
                         <p className="days">6 days ago</p>
                     </div>
-                    <BsBookmark></BsBookmark>
+                    <BsBookmark onClick={savedJobFunction}></BsBookmark>
                 </div>
                 {/* <div className="Jobs_feed_recommendation">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9-RodbKybh5ofnV3HVuMogMeeMRElzTYy1YDrr1eh4-UH9Au3aiu6bUMAFTIEgvHiLkY&usqp=CAU"></img>
@@ -86,6 +97,13 @@ export default function JobsFeed(){
                     <p className="days">6 days ago</p>
                     <BsBookmark></BsBookmark>
                 </div> */}
+            </div>
+            <div className={savedJobs}>
+                <div className="saved_jobs_popup">
+                    <AiFillCheckCircle className="saved_job_check_mark"></AiFillCheckCircle>
+                    <p>This job is saved</p>
+                    <AiOutlineClose className="saved_job_close" onClick={savedJobFunction}></AiOutlineClose>
+                </div>
             </div>
         </div>
     )

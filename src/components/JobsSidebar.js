@@ -58,9 +58,9 @@ export default function JobsSidebar(){
                 <p onClick={jobsidebarpopupFunction}><BsYoutube></BsYoutube>Job seeker guidance</p>
                 <p onClick={jobsidebarpopupFunction}><IoSettingsSharp></IoSettingsSharp>Application settings</p>
             </div>
-            <div className="jobs_sidebar_bottom">
+            {/* <div className="jobs_sidebar_bottom">
                 <h4><BiEdit></BiEdit>Post a free job</h4>
-            </div>
+            </div> */}
         </div>
         <div className={jobAlertModal}>
             <div className="job_alert_body">

@@ -1,7 +1,8 @@
 
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import "../styles/Signup.css";
-import { NavLink, Navigate, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import jwt_decode from "jwt-decode";
 
 const Signin = (props) => {
 
@@ -11,6 +12,27 @@ const Signin = (props) => {
 
     const getEmail = localStorage.getItem("emailData");
     const getPassword = localStorage.getItem("passwordData");
+
+    function handleCallBackResponse(response){
+        console.log("Encoded JWT ID Token: " + response.credential);
+        let userObject = jwt_decode(response.credential);
+        console.log(userObject);
+        props.setLoggedIn(true);
+        navigate("/home");
+    }
+
+    useEffect(()=>{
+        /*global google*/
+        google.accounts.id.initialize({
+            client_id: "718946481304-016uv5er8td7cdmmh2bphhqqev3sm1vg.apps.googleusercontent.com",
+            callback: handleCallBackResponse
+        });
+        google.accounts.id.renderButton(
+            document.getElementById("google_signin"),
+            {theme: "outline", size: "large"}
+        );
+        google.accounts.id.prompt();
+    },[])
 
     const HandleSubmit = (e)=>{
         e.preventDefault();
@@ -34,6 +56,7 @@ const Signin = (props) => {
                   <span>By clicking Agree & Join, you agree to LinkedIn<span className="colourful">User Agreement, Privacy Policy</span> and <span className="colourful">Cookie Policy.</span></span>
                   <button type="submit" onClick={HandleSubmit}>Login</button>
                   <div className="bottom">
+                    <p id="google_signin"></p>
                     <p>New to LinkedIn? <NavLink to="/signup"><span className="SignIn">Sign Up</span></NavLink> </p>
                   </div>
                 </div>

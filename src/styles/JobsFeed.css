@@ -150,6 +150,7 @@
 .Jobs_feed_recommendation > svg:hover{
     background-color: #f3f2ef;
 }
+
 .job_alert_content{
     margin-left: 110px;
 }
@@ -158,4 +159,41 @@
 }
 .job_alert_content > p{
     width: 280px;
+}
+.saved_jobs_deactivated{
+    scale: 0;
+}
+.saved_jobs_activated{
+    scale: 1;
+}
+.saved_jobs_popup{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    width: 260px;
+    margin-left: -448px;
+    margin-top: -130px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    /* position: fixed;
+    bottom: 100px; */
+}
+.saved_jobs_popup > p{
+    margin-left: 10px;
+}
+.saved_job_check_mark{
+    color: rgb(114, 190, 0);
+}
+.saved_job_close{
+    margin-left: 98px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.saved_job_close:hover{
+    background-color: #f3f2ef;
+    cursor: pointer;
 }

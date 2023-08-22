@@ -11,6 +11,11 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 function Post(props){
     const [likeIcon,setLikeIcon] = useState('dislike');
     const [comment, setComment] = useState("comment_box_deactivated");
+    const [inputValue, setInputValue] = useState('');
+    const [postedComment, setPostedComment] = useState();
+    const [hideComment, setHideComment] = useState('posted_comment_box_deactivated');
+    const [commentLike, setCommentLike] = useState("comment_disliked");
+
     function likeFunc(){
         if(likeIcon=="dislike"){
             setLikeIcon('like');
@@ -27,6 +32,21 @@ function Post(props){
     function commentFunction(props){
         setComment("comment_box_activated");
     }
+
+    function postCommentFunction(){
+        setPostedComment(<p>{inputValue}</p>);
+        setComment("comment_box_deactivated");
+        setHideComment("posted_comment_box_activated");
+    }
+
+    function commentLIkeFunction(){
+        if(commentLike==="comment_disliked"){
+            setCommentLike("comment_liked");
+        }
+        else{
+            setCommentLike("comment_disliked");
+        }
+    }
     return(
         <>
         <div className="posts">
@@ -35,7 +55,7 @@ function Post(props){
                     {/* <img src="https://cdn-icons-png.flaticon.com/128/552/552721.png"></img> */}
                     <FaUserCircle/>
                     <div className="post_profile_details">
-                        <h3>{props.name}</h3>
+                        <h3>{localStorage.getItem("emailData")}</h3>
                         <p>{props.Description}</p>
                     </div>
                 </div>
@@ -67,8 +87,18 @@ function Post(props){
         <div className={comment}>
             <div className="comment_box">
              <FaUserCircle/>
-             <input placeholder="Add a comment..."></input>
-             <button type="button" className="post_comment_button">Post</button>
+             <input value={inputValue} onChange={(e)=>setInputValue(e.target.value)} placeholder="Add a comment..."></input>
+             <button type="button" className="post_comment_button" onClick={postCommentFunction}>Post</button>
+            </div>
+        </div>
+        <div className={hideComment}>
+            <div className="posted_comment_box">
+                <FaUserCircle/>
+                <div className="commented_body">
+                    <h3>{localStorage.getItem("emailData")}</h3>
+                    {postedComment}
+                </div>
+                <p className={commentLike} onClick={commentLIkeFunction}>Like</p>
             </div>
         </div>
         </>

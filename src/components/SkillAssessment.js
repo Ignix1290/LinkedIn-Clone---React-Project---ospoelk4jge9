@@ -6,6 +6,7 @@ import Footer from "./Footer";
 
 export default function SkillAssessment(){
     const [loader, setLoader] = useState(false);
+    const [moreSkills, setMoreSkills] = useState("more_skill_deactivated");
 
     useEffect(()=>{
       setLoader(true);
@@ -13,6 +14,15 @@ export default function SkillAssessment(){
         setLoader(false);
       },1000)
     },[])
+
+    function moreSkillsFunction(){
+        if(moreSkills==="more_skill_deactivated"){
+            setMoreSkills("more_skill_activated");
+        }
+        else{
+            setMoreSkills("more_skill_deactivated");
+        }
+    }
     return(
         <>
         <Header></Header>
@@ -58,7 +68,7 @@ export default function SkillAssessment(){
                     </div>
                 </div>
                 <div className="sill_assessment_footer">
-                    <h3>Show more assessments</h3>
+                    <h3 onClick={moreSkillsFunction}>Show more assessments</h3>
                 </div>
             </div>
             <div className="skill_assessment_widget">
@@ -75,6 +85,12 @@ export default function SkillAssessment(){
             </div>
         </div>}
         <div className="skill_footer"><Footer></Footer></div>
+        <div className={moreSkills}>
+            <div className="more_skill_popup">
+                <h1>No more assessments are there</h1>
+                <button onClick={moreSkillsFunction}>OKAY</button>
+            </div>
+        </div>
         
         </>
     )
