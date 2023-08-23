@@ -1,8 +1,8 @@
 .posts{
     background-color: white;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
 }
 .post__header{
     display: flex;
@@ -15,40 +15,40 @@
     justify-content: space-between;
 }
 .post__headerLeft > svg{
-    height: 25px;
-    width: 25px;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 .post_profile_details h3{
-    font-size: 14px;
-    margin: 0px;
-    margin-left: 10px;
+    font-size: 1.4rem;
+    margin: 0rem;
+    margin-left: 1rem;
 }
 .post_profile_details p{
-    font-size: 12px;
-    margin: 0px;
-    margin-left: 10px;
+    font-size: 1.2rem;
+    margin: 0rem;
+    margin-left: 1rem;
 }
 .post__body{
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 .post__footer{
     display: flex;
-    border-top: 1px solid #ccc;
-    padding-top: 10px;
-    margin-top: 10px;
+    border-top: .1rem solid #ccc;
+    padding-top: 1rem;
+    margin-top: 1rem;
 }
 .post__footer__options{
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 .post__footer__options > span{
-    padding: 0px;
-    margin: 0px;
+    padding: 0rem;
+    margin: 0rem;
 }
 .post__footer__options > svg{
-    height: 25px;
+    height: 2.5rem;
     color: rgb(90, 90, 90);
 }
 
@@ -70,28 +70,28 @@
     justify-content: flex-start;
     align-items: center;
     background-color: white;
-    width: 506px;
-    margin-top: -5px;
-    padding-left: 10px;
-    border-radius: 0 0 10px 10px;
+    width: 50.6rem;
+    margin-top: -.5rem;
+    padding-left: 1rem;
+    border-radius: 0 0 1rem 1rem;
 }
 .comment_box > svg{
-    height: 25px;
-    width: 25px;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 .comment_box > input{
-    border-radius: 20px;
-    border: 2px solid #acacac;
+    border-radius: 2rem;
+    border: .2rem solid #acacac;
 }
 .post_comment_button{
     background-color: rgb(28, 70, 183);
-    border-radius: 20px;
+    border-radius: 2rem;
     color: white;
     border: none;
-    width: 50px;
-    height: 25px;
+    width: 5rem;
+    height: 2.5rem;
     font-weight: bold;
-    margin-top: -2px;
+    margin-top: -.2rem;
 }
 .post_comment_button:hover{
     cursor: pointer;
@@ -107,24 +107,24 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 10px;
+    padding-left: 1rem;
     background-color: white;
-    padding-top: 10px;
-    margin-top: -59px;
-    padding-bottom: 30px;
-    border-radius: 0 0 10px 10px;
+    padding-top: 1rem;
+    margin-top: -5.9rem;
+    padding-bottom: 3rem;
+    border-radius: 0 0 1rem 1rem;
 }
 .posted_comment_box > svg{
-    height: 25px;
-    width: 25px;
-    margin-top: -30px;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: -3rem;
 }
 .posted_comment_box > p{
-    margin-left: -420px;
-    margin-bottom: -110px;
-    font-size: 12px;
+    margin-left: -42rem;
+    margin-bottom: -11rem;
+    font-size: 1.2rem;
     color: #888888;
-    padding: 3px;
+    padding: .3rem;
 }
 .posted_comment_box > p:hover{
     cursor: pointer;
@@ -132,14 +132,63 @@
 }
 .commented_body{
     background-color: #ebebeb;
-    border-radius: 0 10px 10px 10px;
-    width: 420px;
-    padding-left: 10px;
-    margin-left: 5px;
+    border-radius: 0 1rem 1rem 1rem;
+    width: 42rem;
+    padding-left: 1rem;
+    margin-left: .5rem;
 }
 .comment_liked{
     color: rgb(38, 101, 218);
 }
 .comment_disliked{
     color: #888888;
+}
+
+@media (max-width:500px){
+    .post__headerLeft > svg {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+    .post_profile_details > h3{
+        font-size: 1.8rem;
+    }
+    .post__footer__options > span{
+        display: none;
+    }
+    .like > svg {
+        width: 2rem;
+        height: 2rem;
+    }
+    .dislike > svg {
+        width: 2rem;
+        height: 2rem;
+    }
+    .post__footer__options > svg {
+        height: 2.5rem;
+        width: 2rem;
+        margin-left: 3rem;
+    }
+    .comment_box > svg {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+    .comment_box > input {
+        border-radius: 2rem;
+        border: 0.2rem solid #acacac;
+        width: 26rem;
+    }
+    .posted_comment_box > svg {
+        height: 3.5rem;
+        width: 3.5rem;
+        margin-top: -3rem;
+    }
+    .commented_body > h3{
+        font-size: 1.7rem;
+    }
+    .commented_body > p{
+        font-size: 1.7rem;
+    }
+    .post__body > p{
+        font-size: 1.7rem;
+    }
 }

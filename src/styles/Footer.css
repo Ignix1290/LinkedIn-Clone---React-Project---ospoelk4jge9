@@ -70,3 +70,9 @@
     font-size: 13px;
     color: #6c6c6c;
 }
+
+@media (max-width:500px){
+    .footer_body{
+        display: none;
+    }
+}

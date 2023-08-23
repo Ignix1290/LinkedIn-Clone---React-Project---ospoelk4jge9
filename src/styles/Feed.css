@@ -1,41 +1,41 @@
 .options_img{
-    height: 30px;
-    width: 30px;
+    height: 3rem;
+    width: 3rem;
     position: static;
 }
 .feed__input svg{
-    margin-top: 10px;
-    height: 40px;
-    width: 40px;
+    margin-top: 1rem;
+    height: 4rem;
+    width: 4rem;
 }
 .feed{
     display: flex;
     flex: 0.6;
     flex-direction: column;
-    margin: 0px 30px;
-    width: 350px;
+    margin: 0rem 3rem;
+    width: 35rem;
     box-sizing: border-box;
 }
 .feed .feed__input{
     display: flex;
     background-color: white;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 .feed .feed__input form{
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     flex: 1;
 }
 .feed .feed__input form input[type='text']{
     flex: 1;
-    border-radius: 20px;
-    padding: 0px 10px;
-    margin-left: 10px;
-    height: 40px;
+    border-radius: 2rem;
+    padding: 0rem 1rem;
+    margin-left: 1rem;
+    height: 4rem;
     outline: 0;
-    border: 1px solid #ccc;
+    border: .1rem solid #ccc;
 }
 
 .feed__options{
@@ -44,51 +44,51 @@
     justify-content: space-between;
     cursor: pointer;
     background-color: white;
-    margin-top: -25px;
-    border-radius: 10px;
+    margin-top: -2.5rem;
+    border-radius: 1rem;
 }
 .feed__options .option{
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #333;
-    font-size: 14px;
-    border-radius: 5px;
-    padding: 10px 10px;
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    padding: 1rem 1rem;
 }
 .feed__options .option div{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 5px;
+    border-radius: .5rem;
 }
 .feed__options .option div:hover{
     background-color: #eee;
 }
 .feed__input button{
-    width: 50px;
+    width: 5rem;
     background-color: rgb(30, 148, 245);
 }
 .option span{
-    margin: 20px;
-    font-size: 15px;
+    margin: 2rem;
+    font-size: 1.5rem;
 }
 .input:hover{
     background-color: #f3f2ef;
     cursor: pointer;
 }
 .post_modal{
-    height: 400px;
-    width: 550px;
+    height: 40rem;
+    width: 55rem;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
     /* position: absolute; */
-    /* top: 40px;
-    left: 440px; */
-    margin-top: 100px;
+    /* top: 40rem;
+    left: 440rem; */
+    margin-top: 10rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px;
+    padding: 3rem;
 }
 .modal_deactivated{
     scale: 0;
@@ -110,19 +110,19 @@
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 0.7;
-    top: -227px;
-    left: -501px;
+    top: -227rem;
+    left: -501rem;
     z-index: 100;
 } */
 .x{
     border-radius: 50%;
     position: relative;
-    top: -80px;
-    /* left: 690px; */
-    padding: 5px;
-    height: 22px;
-    width: 25px;
-    margin-left: 525px;
+    top: -8rem;
+    /* left: 690rem; */
+    padding: .5rem;
+    height: 2.2rem;
+    width: 2.5rem;
+    margin-left: 52.5rem;
 }
 .x:hover{
     background-color: #f3f2ef;
@@ -130,26 +130,26 @@
 }
 .post_button{
     background-color: rgb(28, 70, 183);
-    border-radius: 20px;
+    border-radius: 2rem;
     color: white;
     border: none;
-    width: 50px;
-    height: 25px;
+    width: 5rem;
+    height: 2.5rem;
     font-weight: bold;
-    margin-left: 505px;
+    margin-left: 50.5rem;
 }
 .post_button:hover{
     cursor: pointer;
 }
 .user_logo{
-    height: 60px;
-    width: 60px;
+    height: 6rem;
+    width: 6rem;
 }
 .user_data{
     display: flex;
-    width: 180px;
-    padding: 5px;
-    border-radius: 15px;
+    width: 18rem;
+    padding: .5rem;
+    border-radius: 1.5rem;
 }
 .user_data:hover{
     background-color: #ccc;
@@ -157,15 +157,50 @@
 }
 .user_data > div > p{
     padding: 0;
-    margin-top: -20px;
+    margin-top: -2rem;
 }
 .user_data > div{
-    margin-top: -24px;
-    margin-left: 10px;
+    margin-top: -2.4rem;
+    margin-left: 1rem;
 }
 #post_textarea{
-    width: 570px;
-    height: 240px;
+    width: 57rem;
+    height: 24rem;
     border: none;
     font-size: larger;
+}
+
+@media (max-width:500px){
+    .feed {
+        margin-left: -41rem;
+        margin-top: 47rem;
+        width: 41rem; 
+    }
+    form .input{
+        width: 3rem;
+    }
+    .feed__options .option{
+        padding: 0;
+    }
+    .post_modal{
+        width: 35rem;
+    }
+    .x{
+        margin-left: 33.5rem;
+    }
+    .user_data > div{
+        margin-top: -0.4rem;
+    }
+    .user_data > div > h1{
+        font-size: 2.4rem;
+    }
+    .user_data > div > p{
+        font-size: 1.4rem;
+    }
+    #post_textarea{
+        font-size: 1.7rem;
+    }
+    .post_button{
+        margin-left: 30.5rem;
+    }
 }

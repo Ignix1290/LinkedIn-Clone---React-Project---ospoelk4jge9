@@ -1,13 +1,16 @@
+html{
+    font-size: 62.5%;
+}
 .header{
     display: flex;
     background-color: white;
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
     justify-content: space-between;
-    height: 35px;
+    height: 3.5rem;
     position: sticky;
     top: 0;
-    margin-bottom: 20px;
-    margin-top: -8px;
+    margin-bottom: 2rem;
+    margin-top: -.8rem;
     z-index: 10;
 }
 .body{
@@ -17,46 +20,50 @@
 }
 .header__left{
     display: flex;
-    margin-left: 245px;
+    margin-left: 24.5rem;
 }
 .header__left .header__logo img{
-    height: 30px;
-    width: 30px;
-    margin-top: 2px;
-    margin-left: -22px;
+    height: 3rem;
+    width: 3rem;
+    margin-top: .2rem;
+    margin-left: -2.2rem;
 }
 .header__search{
     display: flex;
     align-items: center;
     background-color: #eef3f8;
-    padding: 3px 10px;
-    border-radius: 5px;
+    padding: .3rem 1rem;
+    border-radius: .5rem;
 }
-.header__search img{
-    height: 15px;
-    margin-left: 140px;
-    margin-bottom: 15px;
+.header__search > img{
+    height: 1.5rem;
+    margin-left: 14rem;
+    margin-bottom: 1.5rem;
 }
-.header__search input{
+.header__search > input{
     background-color: transparent;
-    border: 0px;
+    border: 0rem;
     outline: 0;
-    min-width: 220px;
-    width: 100px;
+    min-width: 22rem;
+    width: 10rem;
+}
+.header__search > svg{
+    height: 2rem;
+    width: 2rem;
 }
 .header__right{
     display: flex;
     align-items: center;
-    margin-right: 330px;
-    margin-bottom: 10px
+    margin-right: 33rem;
+    margin-bottom: 1rem
 }
 .header__icons{
     display: flex;
-    height: 50px;
+    height: 4rem;
    flex-direction: column;
     align-items: center;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
     color: rgb(143, 149, 155);
 }
 .header__icons:hover{
@@ -64,24 +71,25 @@
     color: black;
 }
 .header__icons > svg{
-    height: 25px;
-    width: 25px;
+    height: 3.5rem;
+    width: 6.5rem;
     color: rgb(143, 149, 155);
 }
 .header__icons > svg:hover{
     color: black;
 }
 .header__icons > p{
-    margin: 0px;
+    margin: 0rem;
+    font-size: 1.3rem;
 }
 #home_page:active{
     color: black;
 }
 .header__logo{
-    margin-right: 100px;
+    margin-right: 10rem;
 }
 .header__left .header__search{
-    margin-left: -80px;
+    margin-left: -8rem;
 }
 .header__right:first-child{
     color: black;
@@ -97,48 +105,48 @@
     flex-direction: column;
     background-color: white;
     color: black;
-    margin-top: 346px;
-    margin-left: -210px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 10px gainsboro;
-    height: 265px;
-    width: 195px;
-    padding-left: 10px;
-    padding-top: 10px;
+    margin-top: 34.6rem;
+    margin-left: -21rem;
+    border-radius: .5rem;
+    box-shadow: .1rem .1rem 1rem gainsboro;
+    height: 26.5rem;
+    width: 19.5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
 }
 .head{
     display: flex;
     color: black;
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
 }
 .head > svg{
-    height: 40px;
-    width: 60px;
+    height: 4rem;
+    width: 6rem;
 }
 #name{
     color: black;
-    margin: 0px;
+    margin: 0rem;
 }
 .profile{
-    border-radius: 20px;
-    border: 1px solid rgb(28, 70, 183);
+    border-radius: 2rem;
+    border: .1rem solid rgb(28, 70, 183);
     color: rgb(28, 70, 183);
     position: absolute;
-    left: 5px;
-    width: 170px;
+    left: .5rem;
+    width: 17rem;
     text-align: center;
-    margin-top: 46px;
+    margin-top: 4.6rem;
 }
 .profile:hover{
-    border: 2px solid rgb(28, 70, 183);
+    border: .2rem solid rgb(28, 70, 183);
 }
 .settings{
-   width: 180px;
-    margin-top: 20px;
+   width: 18rem;
+    margin-top: 2rem;
 }
 .settings p{
-    font-size: 15px;
+    font-size: 1.5rem;
     color: rgb(143, 149, 155);;
 }
 .settings p:hover{
@@ -149,5 +157,33 @@
     text-decoration: none;
 }
 .downArrow{
-    left:10px;
+    left:1rem;
+}
+@media(max-width:500px){
+    .header{
+        height: 3rem;
+        position: sticky;
+        top: 0rem;
+        z-index: 10;
+    }
+    .header__icons > p{
+        display: none;
+    }
+    .header__left{
+        display: flex;
+        margin-left: 2.5rem;
+    }
+    .header__search > input{
+        display: none;
+    }
+    .header__icons{
+        height: 2rem;
+        padding: 0.6rem;
+    }
+    .header__icons > svg{
+        width: 4.5rem;
+    }
+    .header__right{
+        padding: 1rem;
+    }
 }

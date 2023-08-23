@@ -7,6 +7,7 @@ import { AiFillBell } from "react-icons/ai";
 import { FaUserCircle } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { NavLink, useNavigate } from "react-router-dom";
+import { AiOutlineSearch } from "react-icons/ai";
 
 
 function Header(){
@@ -44,6 +45,7 @@ function Header(){
                 </div>
                 <div className="header__search">
                     {/* <img src="https://cdn-icons-png.flaticon.com/128/149/149852.png"></img> */}
+                    <AiOutlineSearch></AiOutlineSearch>
                     <input type="text" placeholder="Search"></input>
                 </div>
 
