@@ -1,36 +1,37 @@
 .network_sidebar{
     display: flex;
     flex-direction: column;
-    margin-left: 237px;
+    margin-left: 23.7rem;
 }
 .sidebar_top{
-    border-bottom: 1px solid #ccc;
+    border-bottom: .1rem solid #ccc;
     text-align: center;
     background-color: #fff;
-    border-radius: 10px 10px 0 0;
-    padding-bottom: 10px;
-    height: 390px;
-    width: 270px;
+    border-radius: 1rem 1rem 0 0;
+    padding-bottom: 1rem;
+    height: 39rem;
+    width: 27rem;
     position: fixed;
-    top: 83px;
+    top: 8.3rem;
 }
 .sidebar_top h3{
     font-weight: normal;
+    font-size: 1.6rem;
     padding: 0;
     margin-left: 0;
-    padding-right: 45px;
+    padding-right: 4.5rem;
 }
 .sidebar_top p{
     padding: 0;
     margin-left: 0;
-    padding-left: 30px;
+    padding-left: 3rem;
     display: flex;
     color: lightslategray;
     font-size: large;
 }
 .sidebar_top svg{
-    padding-right: 20px;
-    width: 20px;
+    padding-right: 2rem;
+    width: 2rem;
 }
 .sidebar_top p:hover{
     background-color: #f3f2ef;
@@ -45,24 +46,24 @@
     cursor: pointer;
 }
 .sidebar_bottom{
-    margin-top: 0px;
+    margin-top: 0rem;
     background-color: white;
-    width: 270px;
-    height: 190px;
-    border-radius: 0 0 10px 10px;
+    width: 27rem;
+    height: 19rem;
+    border-radius: 0 0 1rem 1rem;
     position: fixed;
-    top: 484px;
+    top: 48.4rem;
 }
 .events_popup{
     background-color: white;
-    border: 1px solid #ccc;
-    height: 250px;
-    width: 409px;
+    border: .1rem solid #ccc;
+    height: 25rem;
+    width: 40.9rem;
     position: absolute;
-    top: 230px;
-    margin-left: 560px;
+    top: 23rem;
+    margin-left: 56rem;
     z-index: 12;
-    border-radius: 10px;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,21 +83,21 @@
     scale: 0;
 }
 .events_popup > button{
-    margin-top: 30px;
-    border-radius: 35px;
-    border: 1px solid rgb(28, 70, 183);
+    margin-top: 3rem;
+    border-radius: 3.5rem;
+    border: .1rem solid rgb(28, 70, 183);
     background-color: white;
     color: rgb(28, 70, 183);
-    width: 70px;
-    height: 30px;
-    margin-left: 32px;
+    width: 7rem;
+    height: 3rem;
+    margin-left: 3.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2px;
+    gap: .2rem;
 }
 .events_popup > button:hover{
-    border: 2px solid rgb(28, 70, 183);
+    border: .2rem solid rgb(28, 70, 183);
     background-color: rgb(233, 237, 241);
     cursor: pointer;
 }
@@ -115,35 +116,56 @@
 }
 .page_news_hashtag{
     background-color: white;
-    border: 1px solid #ccc;
-    height: 250px;
-    width: 420px;
+    border: .1rem solid #ccc;
+    height: 25rem;
+    width: 41rem;
     position: absolute;
-    top: 230px;
-    margin-left: 560px;
+    top: 23rem;
+    margin-left: 56rem;
     z-index: 12;
-    border-radius: 10px;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .page_news_hashtag > button{
-    margin-top: 30px;
-    border-radius: 35px;
-    border: 1px solid rgb(28, 70, 183);
+    margin-top: 3rem;
+    border-radius: 3.5rem;
+    border: .1rem solid rgb(28, 70, 183);
     background-color: white;
     color: rgb(28, 70, 183);
-    width: 70px;
-    height: 30px;
-    margin-left: 32px;
+    width: 7rem;
+    height: 3rem;
+    margin-left: 3.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2px;
+    gap: .2rem;
 }
 .page_news_hashtag > button:hover{
-    border: 2px solid rgb(28, 70, 183);
+    border: .2rem solid rgb(28, 70, 183);
     background-color: rgb(233, 237, 241);
     cursor: pointer;
+}
+
+@media(max-width:500px){
+    .sidebar_top{
+        width: 41rem;
+        margin-left: -24rem;
+        position: static;
+    }
+    .sidebar_bottom{
+        width: 42rem;
+        margin-left: -25rem;
+        margin-top: 150rem;
+    }
+    .events_popup{
+        margin-left: 0rem;
+        margin-top: -11rem;
+    }
+    .page_news_hashtag{
+        margin-top: -11rem;
+        margin-left: 0rem;
+    }
 }

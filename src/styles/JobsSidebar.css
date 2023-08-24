@@ -1,25 +1,25 @@
 .jobs_sidebar{
     display: flex;
     flex-direction: column;
-    margin-left: 237px;
+    margin-left: 23.7rem;
 }
 .jobs_sidebar_top{
-    border-bottom: 1px solid #ccc;
+    border-bottom: .1rem solid #ccc;
     text-align: center;
     background-color: #fff;
-    border-radius: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     overflow: hidden;
-    height: 280px;
-    width: 234px;
+    height: 28rem;
+    width: 23.4rem;
     position: fixed;
-    top: 83px;
+    top: 8.3rem;
 }
 .jobs_sidebar_top p{
     padding: 0;
     margin-left: 0;
-    padding-left: 30px;
+    padding-left: 3rem;
     display: flex;
     color: rgb(73, 87, 101);
     font-size: large;
@@ -30,12 +30,12 @@
 }
 .jobs_sidebar_bottom{
     position: fixed;
-    top: 380px;
+    top: 38rem;
 }
 .jobs_sidebar_bottom h4{
-    margin-left: 2px;
-    border-radius: 35px;
-    border: 1px solid rgb(28, 70, 183);
+    margin-left: .2rem;
+    border-radius: 3.5rem;
+    border: .1rem solid rgb(28, 70, 183);
     color: rgb(28, 70, 183);
     width: 15vw;
     height: 3vw;
@@ -45,12 +45,12 @@
     font-weight: normal;
 }
 .jobs_sidebar_bottom h4:hover{
-    border: 2px solid rgb(28, 70, 183);
+    border: .2rem solid rgb(28, 70, 183);
     background-color: rgb(202, 209, 227);
     cursor: pointer;
 }
 .jobs_sidebar svg{
-    margin-right: 12px;
+    margin-right: 1.2rem;
 }
 .job_alert_modal_activated{
     scale: 1;
@@ -67,21 +67,21 @@
     scale: 0;
 }
 .job_alert_body{
-    height: 460px;
-    width: 550px;
+    height: 46rem;
+    width: 55rem;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
     /* position: absolute; */
-    /* top: 40px;
-    left: 440px; */
-    margin-top: 100px;
+    /* top: 40rem;
+    left: 440rem; */
+    margin-top: 10rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px;
+    padding: 3rem;
 }
 .job_alert_header{
-    border-bottom: 1px solid #d3d3d3;
-    height: 20px;
+    border-bottom: .1rem solid #d3d3d3;
+    height: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -89,13 +89,13 @@
 }
 .job_alert_header > h2{
     font-weight: normal;
-    padding-bottom: 25px;
+    padding-bottom: 2.5rem;
 }
 .job_alert_header > svg{
-    padding: 5px;
-    height: 22px;
-    width: 25px;
-    margin-bottom: 25px;
+    padding: .5rem;
+    height: 2.2rem;
+    width: 2.5rem;
+    margin-bottom: 2.5rem;
     border-radius: 50%;
 }
 .job_alert_header > svg:hover{
@@ -103,49 +103,49 @@
     background-color: #f3f2ef;
 }
 .search_for_jobs{
-    border-radius: 35px;
-    border: 1px solid rgb(28, 70, 183);
+    border-radius: 3.5rem;
+    border: .1rem solid rgb(28, 70, 183);
     background-color: white;
     color: rgb(28, 70, 183);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 80px;
-    width: 128px;
-    height: 30px;
+    margin-left: 8rem;
+    width: 12.8rem;
+    height: 3rem;
 }
 .search_for_jobs:hover{
-    border: 2px solid rgb(28, 70, 183);
+    border: .2rem solid rgb(28, 70, 183);
     background-color: rgb(233, 237, 241);
     cursor: pointer;
 }
 .job_alert_content{
-    margin-left: 120px;
+    margin-left: 12rem;
 }
 .job_alert_footer{
-    height: 62px;
-    border-top: 1px solid #e4e4e4;
-    border-bottom: 1px solid #e4e4e4;
-    margin-top: 15px;
+    height: 6.2rem;
+    border-top: .1rem solid #e4e4e4;
+    border-bottom: .1rem solid #e4e4e4;
+    margin-top: 1.5rem;
 }
 .done_button{
     background-color: rgb(28, 70, 183);
-    border-radius: 20px;
+    border-radius: 2rem;
     color: white;
     border: none;
-    width: 50px;
-    height: 25px;
+    width: 5rem;
+    height: 2.5rem;
     font-weight: bold;
-    margin-left: 505px;
+    margin-left: 50.5rem;
 }
 .done_button:hover{
     cursor: pointer;
 }
 .job_alert_content >h2{
-    margin-left: 18px;
+    margin-left: 1.8rem;
 }
 .job_alert_content >p{
-    width: 309px;
+    width: 30.9rem;
 }
 .jobs_sidebar_popup_activated{
     scale: 1;
@@ -162,35 +162,47 @@
 }
 .jobs_sidebar_popup{
     background-color: white;
-    border: 1px solid #ccc;
-    height: 250px;
-    width: 420px;
+    border: .1rem solid #ccc;
+    height: 25rem;
+    width: 41rem;
     position: absolute;
-    top: 230px;
-    margin-left: 560px;
+    top: 23rem;
+    margin-left: 56rem;
     z-index: 12;
-    border-radius: 10px;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .jobs_sidebar_popup > button{
-    margin-top: 30px;
-    border-radius: 35px;
-    border: 1px solid rgb(28, 70, 183);
+    margin-top: 3rem;
+    border-radius: 3.5rem;
+    border: .1rem solid rgb(28, 70, 183);
     background-color: white;
     color: rgb(28, 70, 183);
-    width: 70px;
-    height: 30px;
-    margin-left: 32px;
+    width: 7rem;
+    height: 3rem;
+    margin-left: 3.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2px;
+    gap: .2rem;
 }
 .jobs_sidebar_popup > button:hover{
-    border: 2px solid rgb(28, 70, 183);
+    border: .2rem solid rgb(28, 70, 183);
     background-color: rgb(233, 237, 241);
     cursor: pointer;
+}
+
+@media (max-width:500px){
+    .jobs_sidebar_top{
+        margin-left: -25rem;
+        width: 42rem;
+        position: static;
+    }
+    .jobs_sidebar_popup{
+        margin-top: -11rem;
+        margin-left: 0rem;
+    }
 }

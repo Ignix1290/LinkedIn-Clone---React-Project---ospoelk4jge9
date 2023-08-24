@@ -43,6 +43,9 @@
     .container{
         width: 40rem;
     }
+    .container > span{
+        font-size: 1.4rem;
+    }
     .logo {
         margin-left: 11rem;
         font-size: 1.6rem;

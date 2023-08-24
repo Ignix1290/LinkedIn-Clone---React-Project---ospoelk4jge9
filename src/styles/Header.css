@@ -127,6 +127,7 @@ html{
 #name{
     color: black;
     margin: 0rem;
+    font-size: 2.2rem
 }
 .profile{
     border-radius: 2rem;
@@ -137,6 +138,8 @@ html{
     width: 17rem;
     text-align: center;
     margin-top: 4.6rem;
+    height: 2rem;
+    font-size: 1.6rem;
 }
 .profile:hover{
     border: .2rem solid rgb(28, 70, 183);
@@ -165,6 +168,7 @@ html{
         position: sticky;
         top: 0rem;
         z-index: 10;
+        margin-left: -1rem;
     }
     .header__icons > p{
         display: none;
@@ -185,5 +189,12 @@ html{
     }
     .header__right{
         padding: 1rem;
+    }
+    #name{
+        font-size: 2.2rem
+    }
+    .profile{
+        height: 2rem;
+        font-size: 1.6rem;
     }
 }

@@ -13,26 +13,26 @@ const Signin = (props) => {
     const getEmail = localStorage.getItem("emailData");
     const getPassword = localStorage.getItem("passwordData");
 
-    function handleCallBackResponse(response){
-        console.log("Encoded JWT ID Token: " + response.credential);
-        let userObject = jwt_decode(response.credential);
-        console.log(userObject);
-        props.setLoggedIn(true);
-        navigate("/home");
-    }
+    // function handleCallBackResponse(response){
+    //     console.log("Encoded JWT ID Token: " + response.credential);
+    //     let userObject = jwt_decode(response.credential);
+    //     console.log(userObject);
+    //     props.setLoggedIn(true);
+    //     navigate("/home");
+    // }
 
-    useEffect(()=>{
-        /*global google*/
-        google.accounts.id.initialize({
-            client_id: "718946481304-016uv5er8td7cdmmh2bphhqqev3sm1vg.apps.googleusercontent.com",
-            callback: handleCallBackResponse
-        });
-        google.accounts.id.renderButton(
-            document.getElementById("google_signin"),
-            {theme: "outline", size: "large"}
-        );
-        google.accounts.id.prompt();
-    },[])
+    // useEffect(()=>{
+    //     /*global google*/
+    //     google.accounts.id.initialize({
+    //         client_id: "718946481304-016uv5er8td7cdmmh2bphhqqev3sm1vg.apps.googleusercontent.com",
+    //         callback: handleCallBackResponse
+    //     });
+    //     google.accounts.id.renderButton(
+    //         document.getElementById("google_signin"),
+    //         {theme: "outline", size: "large"}
+    //     );
+    //     // google.accounts.id.prompt();
+    // },[])
 
     const HandleSubmit = (e)=>{
         e.preventDefault();

@@ -1,35 +1,37 @@
 .network_feed_body{
-    height: 600px;
-    width: 660px;
-    margin-left: 303px;
-    border-radius: 10px;
-    margin-top: 10px;
+    height: 60rem;
+    width: 66rem;
+    margin-left: 30.3rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
 }
 .network_feed_header{
-    height: 50px;
-    width: 660px;
+    height: 5rem;
+    width: 66rem;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .network_feed_bottom{
-    margin-top: 20px;
-    height: 700px;
-    width: 660px;
+    margin-top: 2rem;
+    height: 70rem;
+    width: 66rem;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 .invitaions{
-    margin-left: 20px;
+    margin-left: 2rem;
     color: #686868;
+    font-size: 1.6rem;
 }
 .manage{
-    margin-right: 20px;
-    padding: 5px;
-    border-radius: 5px;
+    margin-right: 2rem;
+    padding: .5rem;
+    border-radius: .5rem;
     color: #686868;
+    font-size: 1.6rem;
 }
 .manage:hover{
     background-color: #e8e8e8;
@@ -40,57 +42,67 @@
     justify-content: space-between;
 }
 .header_left{
-    margin-left: 20px;
+    margin-left: 2rem;
     color: #686868;
+    font-size: 1.6rem;
 }
 .header_right{
-    margin-right: 20px;
-    padding: 5px;
-    border-radius: 5px;
+    margin-right: 2rem;
+    margin-top: -3.4rem;
+    padding: 5rem;
+    border-radius: .5rem;
     color: #686868;
+    font-size: 1.6rem;
 }
 .header_right:hover{
     background-color: #e8e8e8;
     cursor: pointer;
 }
 .network_feed_cards{
-    height: 540px;
-    width: 660px;
-    padding: 20px;
+    height: 54rem;
+    width: 66rem;
+    padding: 2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: -7rem;
 }
 .card{
-    height: 250px;
-    width: 180px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin: 10px;
+    height: 25rem;
+    width: 18rem;
+    border: .1rem solid #ccc;
+    border-radius: 1rem;
+    margin: 1rem;
 }
 .card:hover{
-    box-shadow: 1px 2px 5px #686868;
+    box-shadow: .1rem .2rem .5rem #686868;
     cursor: pointer;
+}
+.card .name{
+    font-size: 1.9rem;
 }
 .card .name:hover{
     text-decoration: underline;
 }
+.card .company_name{
+    font-size: 1.5rem;
+}
 .connect{
-    margin-top: 30px;
-    border-radius: 35px;
-    border: 1px solid rgb(28, 70, 183);
+    margin-top: 3rem;
+    border-radius: 3.5rem;
+    border: .1rem solid rgb(28, 70, 183);
     background-color: white;
     color: rgb(28, 70, 183);
-    width: 8vw;
-    height: 30px;
-    margin-left: 32px;
+    width: 10rem;
+    height: 3rem;
+    margin-left: 3.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2px;
+    gap: .2rem;
 }
 .connect:hover{
-    border: 2px solid rgb(28, 70, 183);
+    border: .2rem solid rgb(28, 70, 183);
     background-color: rgb(233, 237, 241);
     cursor: pointer;
 }
@@ -104,18 +116,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -55px;
+    margin-top: -5.5rem;
 }
 .background_img{
-    border-radius: 10px 10px 0 0;
-    width: 180px;
-    height: 70px;
+    border-radius: 1rem 1rem 0 0;
+    width: 18rem;
+    height: 7rem;
 }
 .profile_img{
-    width: 100px;
-    height: 90px;
+    width: 10rem;
+    height: 9rem;
     border-radius: 50%;
-    margin-left: 40px;
+    margin-left: 4rem;
     position: relative;
-    top: -51px;
+    top: -5.1rem;
+}
+
+@media (max-width:500px){
+    .network_feed_body{
+        margin-left: -43rem;
+        margin-top: 42rem;
+    }
+    .network_feed_header{
+        width: 42.3rem;
+    }
+    .network_bottom_header{
+        width: 46.3rem;
+    }
+    .network_feed_cards{
+        width: 42rem;
+    }
+    .network_feed_body{
+        width: 42rem;
+    }
+    .invitaions{
+        margin-left: 4rem;
+    }
+    .header_left{
+        margin-left: 4rem;
+    }
 }

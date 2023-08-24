@@ -152,22 +152,23 @@
     border-radius: 1.5rem;
 }
 .user_data:hover{
-    background-color: #ccc;
+    background-color: #e3e3e3;
     cursor: pointer;
 }
 .user_data > div > p{
     padding: 0;
-    margin-top: -2rem;
+    margin-top: -1rem;
+    font-size: 1.3rem;
 }
 .user_data > div{
-    margin-top: -2.4rem;
+    margin-top: -0.4rem;
     margin-left: 1rem;
 }
 #post_textarea{
     width: 57rem;
     height: 24rem;
     border: none;
-    font-size: larger;
+    font-size: 1.7rem;
 }
 
 @media (max-width:500px){

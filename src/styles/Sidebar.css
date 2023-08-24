@@ -160,6 +160,7 @@
     }
     .sidebar__recent{
         margin-left: -7rem;
+        position: static;
     }
     .profile__details h3{
         font-size: 2rem;

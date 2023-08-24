@@ -20,7 +20,7 @@ export default function JobsWidget(){
                 </div>
             </div>
             <div className="jobs_widget_bottom">
-                <About></About>
+                <About></About> 
             </div>
             
         </div>
