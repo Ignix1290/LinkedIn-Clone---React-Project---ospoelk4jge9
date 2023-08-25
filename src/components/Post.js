@@ -34,9 +34,11 @@ function Post(props){
     }
 
     function postCommentFunction(){
-        setPostedComment(<p>{inputValue}</p>);
-        setComment("comment_box_deactivated");
-        setHideComment("posted_comment_box_activated");
+        if(inputValue !== ""){
+            setPostedComment(<p>{inputValue}</p>);
+            setComment("comment_box_deactivated");
+            setHideComment("posted_comment_box_activated");
+        }
     }
 
     function commentLIkeFunction(){
