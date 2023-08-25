@@ -29,6 +29,17 @@ export default function Connections(){
       },1000)
     },[])
 
+    const [messagePopup, setMessagePopup] = useState("message_popup_deactivated");
+
+    function closeMessageFunction(){
+        if(messagePopup === "message_popup_deactivated"){
+            setMessagePopup("message_popup_activated");
+        }
+        else{
+            setMessagePopup("message_popup_deactivated");
+        }
+    }
+
     return(
         <>
         <Header></Header>
@@ -49,7 +60,7 @@ export default function Connections(){
                                 <p>{current.company.name}</p>
                             </div>
                             <div className="connections_content_button">
-                                <button className="message">Message</button>
+                                <button className="message" onClick={closeMessageFunction}>Message</button>
                                 {/* <CiMenuKebab></CiMenuKebab> */}
                             </div>
                         </div>
@@ -70,6 +81,12 @@ export default function Connections(){
         </div>}
         <div className="connections_footer">
             <Footer></Footer>
+        </div>
+        <div className={messagePopup}>
+            <div className="message_popup_body">
+                <h1>This feature is not available yet!!!</h1>
+                <button onClick={closeMessageFunction}>OKAY</button>
+            </div>
         </div>
         </>
     )

@@ -62,7 +62,7 @@
     color: rgba(0,0,0,0.6);
 }
 .alumni{
-    margin-left: -6.8rem;
+    margin-left: -12.8rem;
 }
 .stat__number:hover{
     cursor: pointer;
@@ -150,7 +150,7 @@
         margin-left: -17.2rem;
     }
     .alumni {
-        margin-left: -23.8rem;
+        margin-left: -29.8rem;
     }
     .try_premium {
         margin-left: -26rem;

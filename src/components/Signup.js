@@ -39,8 +39,8 @@ function Signup(){
             <div className="form_body">
             <form>
                 <div className="login_form">
-                  Email or Phone Number <input type="text" ref={emailInput}></input>
-                  Password (6 or more characters)<input type="password" ref={passwordInput}></input>
+                  <p>Email or Phone Number</p> <input type="text" ref={emailInput}></input>
+                  <p>Password (6 or more characters)</p><input type="password" ref={passwordInput}></input>
                   {passwordError == true && <p className="error">Password should be atleast 6 characters or more</p>}
                   <span>By clicking Agree & Join, you agree to LinkedIn<span className="colourful">User Agreement, Privacy Policy</span> and <span className="colourful">Cookie Policy.</span></span>
                   <button type="submit" onClick={HandleSubmit}>Agree & Join</button>

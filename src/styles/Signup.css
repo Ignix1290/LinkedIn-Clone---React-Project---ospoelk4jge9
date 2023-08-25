@@ -23,7 +23,10 @@
     align-items: center;
     justify-content: center;
 }
-button{
+.login_form > p{
+    font-size: 1.6rem;
+}
+.login_form > button{
     background-color: rgb(28, 70, 183);
     border-radius: 20px;
     color: white;
@@ -36,7 +39,7 @@ button{
 button:active{
     scale: 0.8;
 }
-input{
+.login_form > input{
     width: 330px;
     padding: 10px;
     margin: 10px;
@@ -56,7 +59,7 @@ input{
     text-decoration: underline;
     cursor: pointer;
 }
-span{
+.login_form > span{
     margin-left: 40px;
     margin-right: 40px;
     font-size: 12px;
@@ -89,6 +92,9 @@ span{
     justify-content: center;
     border-top: 1px solid #ccc;
     margin-top: 13px;
+}
+.bottom > p{
+    font-size: 1.5rem;
 }
 .getHelp{
     color: rgb(28, 70, 183);

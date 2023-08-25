@@ -1,98 +1,101 @@
 .saved_contacts{
     background-color: white;
     width: 100vw;
-    height: 65px;
-    margin-top: -19px;
+    height: 6.5rem;
+    margin-top: -1.9rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .saved_contacts > h2{
     font-weight: normal;
-    margin-right: 915px;
+    margin-right: 91.5rem;
+    font-size: 2rem;
 }
 .contact_feed{
-    height: 200px;
-    width: 780px;
+    height: 20rem;
+    width: 78rem;
     background-color: white;
-    margin-top: 36px;
-    margin-left: 240px;
-    border-radius: 10px;
+    margin-top: 3.6rem;
+    margin-left: 24rem;
+    border-radius: 1rem;
 }
 .contact_feed_header{
-    border-bottom: 1px solid #e2e2e2;
-    height: 45px;
-    border-radius: 10px 10px 0 0;
+    border-bottom: .1rem solid #e2e2e2;
+    height: 4.5rem;
+    border-radius: 1rem 1rem 0 0;
     display: flex;
     justify-content: flex-start;
 }
 .contact_feed_header > p{
-    margin-left: 30px;
+    margin-left: 3rem;
+    font-size: 1.8rem;
 }
 .contact_feed_body{
     display: flex;
     flex-direction: row;
 }
 .contact_feed_img{
-    height: 100px;
-    width: 100px;
+    height: 10rem;
+    width: 10rem;
 }
 .contact_feed_content{
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 .contact_feed_img > svg{
-    height: 80px;
-    width: 80px;
-    margin-top: 25px;
-    margin-left: 20px;
+    height: 8rem;
+    width: 8rem;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
 }
 .contact_feed_content > h2{
-    margin-top: 35px;
-    margin-bottom: -10px;
+    margin-top: 3.5rem;
+    margin-bottom: -1rem;
     font-weight: normal;
+    font-size: 1.8rem;
 }
 .contact_feed_content > p{
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 .contact_link{
     color: rgb(28, 70, 183);
-    padding: 5px;
-    border-radius: 5px;
-    width: 130px;
+    padding: .5rem;
+    border-radius: .5rem;
+    width: 13rem;
 }
 .contact_link:hover{
     background-color: rgb(230, 238, 255);
     cursor: pointer;
 }
 .contact_widget{
-    height: 150px;
-    width: 280px;
-    margin-left: 1049px;
-    margin-top: -214px;
+    height: 15rem;
+    width: 28rem;
+    margin-left: 104.9rem;
+    margin-top: -21.4rem;
 }
 .contact_buttons{
-    margin-top: 18px;
-    border-radius: 35px;
-    border: 1px solid rgb(28, 70, 183);
+    margin-top: 1.8rem;
+    border-radius: 3.5rem;
+    border: .1rem solid rgb(28, 70, 183);
     background-color: #f3f2ef;
     color: rgb(28, 70, 183);
     width: 18vw;
-    height: 38px;
+    height: 3.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .contact_buttons:hover{
-    border: 2px solid rgb(28, 70, 183);
+    border: .2rem solid rgb(28, 70, 183);
     background-color: rgb(233, 237, 241);
     cursor: pointer;
 }
 .bottom_contact_widget{
-    border-top: 1px solid #ccc;
-    margin-top: 15px;
+    border-top: .1rem solid #ccc;
+    margin-top: 1.5rem;
 }
 .contact_footer{
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 .contacts_synced_activated{
     scale: 1;
@@ -109,35 +112,49 @@
 }
 .contacts_synced_popup{
     background-color: white;
-    border: 1px solid #ccc;
-    height: 250px;
-    width: 420px;
+    border: .1rem solid #ccc;
+    height: 25rem;
+    width: 41rem;
     position: absolute;
-    top: 230px;
-    margin-left: 560px;
+    top: 23rem;
+    margin-left: 56rem;
     z-index: 12;
-    border-radius: 10px;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .contacts_synced_popup > button{
-    margin-top: 30px;
-    border-radius: 35px;
-    border: 1px solid rgb(28, 70, 183);
+    margin-top: 3rem;
+    border-radius: 3.5rem;
+    border: .1rem solid rgb(28, 70, 183);
     background-color: white;
     color: rgb(28, 70, 183);
-    width: 70px;
-    height: 30px;
-    margin-left: 32px;
+    width: 7rem;
+    height: 3rem;
+    margin-left: 3.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2px;
+    gap: .2rem;
 }
 .contacts_synced_popup > button:hover{
-    border: 2px solid rgb(28, 70, 183);
+    border: .2rem solid rgb(28, 70, 183);
     background-color: rgb(233, 237, 241);
     cursor: pointer;
+}
+
+@media (max-width:500px){
+    .contact_feed{
+        margin-left: -1rem;
+        width: 42rem;
+    }
+    .bottom_contact_widget {
+        margin-top: 57.5rem;
+        margin-left: -107rem;
+    }
+    .contacts_synced_popup{
+        margin-left: 0rem;
+    }
 }

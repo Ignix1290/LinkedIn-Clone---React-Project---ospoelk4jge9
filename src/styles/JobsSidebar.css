@@ -205,4 +205,13 @@
         margin-top: -11rem;
         margin-left: 0rem;
     }
+    .job_alert_body{
+        width: 35rem;
+    }
+    .job_alert_content {
+        margin-left: 4rem;
+    }
+    .done_button{
+        margin-left: 30.5rem;
+    }
 }

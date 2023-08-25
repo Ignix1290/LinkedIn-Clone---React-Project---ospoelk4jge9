@@ -1,14 +1,14 @@
 .groups_feed_body{
     background-color: white;
-    border-radius: 10px;
-    height: 570px;
-    width: 750px;
-    margin-left: 240px;
-    margin-top: 30px
+    border-radius: 1rem;
+    height: 57rem;
+    width: 75rem;
+    margin-left: 24rem;
+    margin-top: 3rem
 }
 .groups_header{
-    border-bottom: 1px solid #dadada;
-    height: 55px;
+    border-bottom: .1rem solid #dadada;
+    height: 5.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,120 +18,148 @@
     flex-direction: row;
 }
 .group_header_left > p{
-    margin-left: 35px;
+    margin-left: 3.5rem;
+    font-size: 1.6rem;
 }
 .groups_header_button{
-    margin-top: 10px;
-    border-radius: 35px;
-    border: 1px solid rgb(28, 70, 183);
+    margin-top: 1rem;
+    border-radius: 3.5rem;
+    border: .1rem solid rgb(28, 70, 183);
     background-color: white;
     color: rgb(28, 70, 183);
     width: 9vw;
-    height: 35px;
-    margin-right: 30px;
+    height: 3.5rem;
+    margin-right: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .groups_header_button:hover{
-    border: 2px solid rgb(28, 70, 183);
+    border: .2rem solid rgb(28, 70, 183);
     background-color: rgb(233, 237, 241);
     cursor: pointer;
 }
 .groups_feed_content{
-    margin-left: 262px;
-    margin-top: 65px;
+    margin-left: 26.2rem;
+    margin-top: 6.5rem;
+}
+.groups_feed_content > h2{
+    font-size: 2rem;
 }
 .groups_feed_content > img{
-    width: 153px;
-    height: 152px;
-    margin-left: 12px;
+    width: 15.3rem;
+    height: 15.2rem;
+    margin-left: 1.2rem;
 }
 .groups_feed_content > p{
-    width: 295px;
-    margin-left: -55px;
+    width: 29.5rem;
+    margin-left: -5.5rem;
+    font-size: 1.6rem;
 }
 .groups_content_button{
-    margin-top: 38px;
-    border-radius: 35px;
-    border: 1px solid rgb(28, 70, 183);
+    margin-top: 3.8rem;
+    border-radius: 3.5rem;
+    border: .1rem solid rgb(28, 70, 183);
     background-color: white;
     color: rgb(28, 70, 183);
     width: 7vw;
-    height: 35px;
-    margin-left: 30px;
+    height: 3.5rem;
+    margin-left: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .groups_content_button:hover{
-    border: 2px solid rgb(28, 70, 183);
+    border: .2rem solid rgb(28, 70, 183);
     background-color: rgb(233, 237, 241);
     cursor: pointer;
 }
 .groups_widget{
-    height: 448px;
-    width: 280px;
+    height: 44.8rem;
+    width: 28rem;
     background-color: white;
-    margin-left: 1020px;
-    margin-top: -571px;
-    border-radius: 10px;
+    margin-left: 102rem;
+    margin-top: -57.1rem;
+    border-radius: 1rem;
 }
 .groups_widget_header{
     display: flex;
     justify-content: flex-start;
-    padding-left: 20px;
+    padding-left: 2rem;
+}
+.groups_widget_header > p{
+    font-size: 1.6rem;
 }
 .groups_widget_content{
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid #e7e7e7;
-    height: 130px;
+    border-bottom: .1rem solid #e7e7e7;
+    height: 13rem;
 }
 .groups_widget_img{
-    height: 100px;
-    width: 80px;
+    height: 10rem;
+    width: 8rem;
 }
 .groups_widget_body{
 }
 .groups_widget_button{
-    margin-top: 10px;
-    border-radius: 35px;
-    border: 1px solid #7f7f7f;
+    margin-top: 1rem;
+    border-radius: 3.5rem;
+    border: .1rem solid #7f7f7f;
     background-color: white;
     color: #7f7f7f;
-    width: 4vw;
-    height: 35px;
+    width: 5rem;
+    height: 3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .groups_widget_button:hover{
     cursor: pointer;
-    border: 2px solid #7f7f7f;
+    border: .2rem solid #7f7f7f;
     background-color: #ededed;
 }
 .groups_widget_body > p{
-    margin-top: -18px;
-    font-size: 11px;
+    margin-top: -1.8rem;
+    font-size: 1.1rem;
     color: #b0b0b0;
 }
 .groups_widget_body > h4{
     font-weight: normal;
+    font-size: 1.4rem;
 }
 .groups_widget_body > h4:hover{
     text-decoration: underline;
     cursor: pointer;
 }
 .groups_widget_img > img{
-    height: 80px;
-    width: 80px;
-    margin-top: 15px;
+    height: 8rem;
+    width: 8rem;
+    margin-top: 1.5rem;
 }
 .below_groups_widget{
-    border-top: 1px solid #e2e2e2;
-    margin-top: 40px;
+    border-top: .1rem solid #e2e2e2;
+    margin-top: 4rem;
 }
 .groups_footer{
-    margin-top: 200px;
+    margin-top: 20rem;
+}
+
+@media (max-width:500px){
+    .groups_feed_body{
+        margin-left: -2rem;
+        width: 43rem;
+        height: 45rem;
+    }
+    .groups_feed_content{
+        margin-left: 13.2rem;
+    }
+    .groups_widget{
+        margin-top: 1.9rem;
+        margin-left: 0rem;
+        width: 41rem;
+    }
+    .groups_widget_content{
+        margin-left: 3rem;
+    }
 }

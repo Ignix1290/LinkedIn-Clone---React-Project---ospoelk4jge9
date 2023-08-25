@@ -1,111 +1,116 @@
 .skill_assessment_feed{
-    height: 590px;
-    width: 750px;
+    height: 59rem;
+    width: 75rem;
     background-color: white;
-    margin-top: 30px;
-    margin-left: 240px;
-    border-radius: 10px;
+    margin-top: 3rem;
+    margin-left: 24rem;
+    border-radius: 1rem;
 }
 .skill_assessment_header{
-    padding-top: 10px;
-    padding-left: 28px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #e5e5e5;
+    padding-top: 1rem;
+    padding-left: 2.8rem;
+    padding-bottom: 1.5rem;
+    border-bottom: .1rem solid #e5e5e5;
 }
 .skill_assessment_header > h2{
     font-weight: normal;
+    font-size: 2rem;
 }
 .skill_assessment_header > p{
-    width: 444px;
+    width: 44.4rem;
+    font-size: 1.4rem;
 }
 .skill_content_button{
-    margin-top: 10px;
-    border-radius: 35px;
-    border: 1px solid #7f7f7f;
+    margin-top: 1rem;
+    border-radius: 3.5rem;
+    border: .1rem solid #7f7f7f;
     background-color: white;
     color: #7f7f7f;
     width: auto;
-    height: 35px;
+    height: 3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 1.5rem;
 }
 .skill_content_button:hover{
     cursor: pointer;
-    border: 2px solid #7f7f7f;
+    border: .2rem solid #7f7f7f;
     background-color: #ededed;
 }
 .skill_content_header{
     display: flex;
     flex-direction: row;
-    padding-left: 28px;
-    padding-top: 20px;
-    margin-bottom: 20px;
+    padding-left: 2.8rem;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
 }
 .skill_content_body{
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: .1rem solid #e5e5e5;
 }
 .skill_content_body:hover{
     cursor: pointer;
     text-decoration: underline;
 }
 .skill_content_img{
-    height: 100px;
-    width: 100px;
+    height: 10rem;
+    width: 10rem;
 }
 .skill_content{
-    height: 100px;
-    width: 700px;
-    margin-left: 15px;
+    height: 10rem;
+    width: 70rem;
+    margin-left: 1.5rem;
 }
 .skill_content > h2{
     font-weight: normal;
+    font-size: 1.8rem;
 }
 .skill_content > p{
-    width: 595px;
-    font-size: 13px;
-    margin-top: -10px;
+    width: 59.5rem;
+    font-size: 1.3rem;
+    margin-top: -1rem;
 }
 .skill_content_img > img{
-    margin-left: 15px;
-    margin-top: 15px;
-    height: 80px;
-    width: 80px;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    height: 8rem;
+    width: 8rem;
 }
 .sill_assessment_footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 1rem 1rem;
 }
 .sill_assessment_footer > h3{
     font-weight: normal;
     color: rgb(0, 101, 195);
+    font-size: 2rem;
 }
 .sill_assessment_footer:hover{
     cursor: pointer;
     background-color: rgb(211, 234, 255);
 }
 .skill_assessment_widget{
-    height: 300px;
-    width: 290px;
-    margin-left: 1017px;
-    margin-top: -609px;
-    border-radius: 10px 10px 0 10px;
+    height: 30rem;
+    width: 29rem;
+    margin-left: 101.7rem;
+    margin-top: -60.9rem;
+    border-radius: 1rem 1rem 0 1rem;
     background-color: white;
 }
 .skill_assessment_widget > h3{
     font-weight: normal;
-    margin-left: 20px;
-    padding-top: 26px;
+    margin-left: 2rem;
+    padding-top: 2.6rem;
+    font-size: 1.8rem;
 }
 .skill_assessment_score{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    width: 188px;
+    width: 18.8rem;
 }
 .skill_assessment_score > p{
     display: flex;
@@ -113,24 +118,24 @@
     align-items: center;
     margin: 0;
     padding: 0;
+    font-size: 1.6rem;
 }
 .skill_score_zero{
     color: rgb(0, 101, 195);
-    font-size: 25px;
 }
 .skill_score_img{
-    height: 160px;
-    width: 145px;
-    margin-left: 144px;
-    margin-top: 27px;
+    height: 16rem;
+    width: 14.5rem;
+    margin-left: 14.4rem;
+    margin-top: 2.7rem;
     background-color: white;
 }
 .skill_score_img > img{
-    height: 160px;
-    width: 145px;
+    height: 16rem;
+    width: 14.5rem;
 }
 .skill_footer{
-    margin-top: 200px;
+    margin-top: 20rem;
 }
 .more_skill_activated{
     scale: 1;
@@ -147,35 +152,109 @@
 }
 .more_skill_popup{
     background-color: white;
-    border: 1px solid #ccc;
-    height: 250px;
-    width: 420px;
+    border: .1rem solid #ccc;
+    height: 25rem;
+    width: 41rem;
     position: absolute;
-    top: 230px;
-    margin-left: 560px;
+    top: 23rem;
+    margin-left: 56rem;
     z-index: 12;
-    border-radius: 10px;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .more_skill_popup > button{
-    margin-top: 30px;
-    border-radius: 35px;
-    border: 1px solid rgb(28, 70, 183);
+    margin-top: 3rem;
+    border-radius: 3.5rem;
+    border: .1rem solid rgb(28, 70, 183);
     background-color: white;
     color: rgb(28, 70, 183);
-    width: 70px;
-    height: 30px;
-    margin-left: 32px;
+    width: 7rem;
+    height: 3rem;
+    margin-left: 3.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2px;
+    gap: .2rem;
 }
 .more_skill_popup > button:hover{
-    border: 2px solid rgb(28, 70, 183);
+    border: .2rem solid rgb(28, 70, 183);
     background-color: rgb(233, 237, 241);
     cursor: pointer;
+}
+.skill_completed_activated{
+    scale: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 11;
+}
+.skill_completed_deactivated{
+    scale: 0;
+}
+.skill_completed_popup{
+    background-color: white;
+    border: .1rem solid #ccc;
+    height: 25rem;
+    width: 41rem;
+    position: absolute;
+    top: 23rem;
+    margin-left: 56rem;
+    z-index: 12;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill_completed_popup > button{
+    margin-top: 3rem;
+    border-radius: 3.5rem;
+    border: .1rem solid rgb(28, 70, 183);
+    background-color: white;
+    color: rgb(28, 70, 183);
+    width: 7rem;
+    height: 3rem;
+    margin-left: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+}
+.skill_completed_popup > button:hover{
+    border: .2rem solid rgb(28, 70, 183);
+    background-color: rgb(233, 237, 241);
+    cursor: pointer;
+}
+
+@media (max-width:500px){
+    .skill_assessment_feed{
+        margin-left: -1rem;
+        width: 42rem;
+    }
+    .skill_assessment_header > p {
+        width: 34.4rem;
+    }
+    .skill_content > p{
+        width: 28.5rem;
+    }
+    .skill_assessment_widget{
+        margin-left: -1.3rem;
+        margin-top: 0.1rem;
+        width: 43rem;
+    }
+    .skill_score_img > img {
+        margin-left: 12rem;
+    }
+    .more_skill_popup{
+        margin-left: 0rem;
+    }
+    .skill_completed_popup{
+        margin-left: 0rem;
+    }
 }

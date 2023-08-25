@@ -7,6 +7,7 @@ import Footer from "./Footer";
 export default function SkillAssessment(){
     const [loader, setLoader] = useState(false);
     const [moreSkills, setMoreSkills] = useState("more_skill_deactivated");
+    const [skillCompleted, setSkillCompleted] = useState("skill_completed_deactivated");
 
     useEffect(()=>{
       setLoader(true);
@@ -23,6 +24,15 @@ export default function SkillAssessment(){
             setMoreSkills("more_skill_deactivated");
         }
     }
+
+    function skillCompletedFunction(){
+        if(skillCompleted === "skill_completed_deactivated"){
+            setSkillCompleted("skill_completed_activated");
+        }
+        else{
+            setSkillCompleted("skill_completed_deactivated");
+        }
+    }
     return(
         <>
         <Header></Header>
@@ -37,7 +47,7 @@ export default function SkillAssessment(){
                     <button className="skill_content_button">All</button>
                     <button className="skill_content_button">Recommended</button>
                 </div>
-                <div className="skill_content_body">
+                <div className="skill_content_body" onClick={skillCompletedFunction}>
                     <div className="skill_content_img">
                         <img src="https://media.licdn.com/media/AAYQAQSZAAgAAQAAAAAAABu2v0Ua5w2jRuOvJE7JAGuwDw.png"></img>
                     </div>
@@ -47,7 +57,7 @@ export default function SkillAssessment(){
                            2M people took this</p>
                     </div>
                 </div>
-                <div className="skill_content_body">
+                <div className="skill_content_body" onClick={skillCompletedFunction}>
                     <div className="skill_content_img">
                         <img src="https://media.licdn.com/media/AAYQAQSZAAgAAQAAAAAAABYQDnbtgNYvTNG8bYmJfDY3AQ.png"></img>
                     </div>
@@ -57,7 +67,7 @@ export default function SkillAssessment(){
                            2.5M people took this</p>
                     </div>
                 </div>
-                <div className="skill_content_body">
+                <div className="skill_content_body" onClick={skillCompletedFunction}>
                     <div className="skill_content_img">
                         <img src="https://media.licdn.com/media/AAYQAQSZAAgAAQAAAAAAABPIj0yNMKrJR96eOuPB_YDI0A.png"></img>
                     </div>
@@ -74,7 +84,7 @@ export default function SkillAssessment(){
             <div className="skill_assessment_widget">
                 <h3>Your assessments</h3>
                 <div className="skill_assessment_score">
-                    <p className="skill_score_zero">0</p>
+                    <p className="skill_score_zero">3</p>
                     <p className="skill_score_zero">0</p>
                     <p>Badge</p>
                     <p>To retake</p>
@@ -89,6 +99,12 @@ export default function SkillAssessment(){
             <div className="more_skill_popup">
                 <h1>No more assessments are there</h1>
                 <button onClick={moreSkillsFunction}>OKAY</button>
+            </div>
+        </div>
+        <div className={skillCompleted}>
+            <div className="skill_completed_popup">
+                <h1>You have already completed this assessment</h1>
+                <button onClick={skillCompletedFunction}>OKAY</button>
             </div>
         </div>
         

@@ -52,5 +52,6 @@
     }
     .inner_container{
         background-color: #e1e1e1;
+        width: 43rem;
     }
 }

@@ -1,54 +1,56 @@
 .connection_feed_body{
     background-color: white;
-    height: 1000px;
-    width: 760px;
-    margin-left: 239px;
-    margin-top: 30px;
-    border-radius: 10px;
+    height: 100rem;
+    width: 76rem;
+    margin-left: 23.9rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
 }
 .connection_feed_header{
-    padding-left: 23px;
-    padding-top: 5px;
-    border-bottom: 1px solid #e4e4e4;
+    padding-left: 2.3rem;
+    padding-top: .5rem;
+    border-bottom: .1rem solid #e4e4e4;
 }
 .connection_feed_header > p{
-    font-size: 20px;
+    font-size: 2rem;
 }
 .connections_feed_content{
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: .1rem solid #e7e7e7;
 }
 .connection_content_img{
-    height: 100px;
-    width: 100px;
+    height: 10rem;
+    width: 10rem;
     
 }
 .connection_content_img > img{
-    height: 90px;
-    width: 90px;
+    height: 9rem;
+    width: 9rem;
     border-radius: 50%;
-    margin: 5px 0 0 5px;
+    margin: .5rem 0 0 .5rem;
 }
 .connection_content{
-    width: 126px;
+    width: 12.6rem;
+    margin-top: .1rem;
 }
 .connection_content > h3{
     font-weight: normal;
+    font-size: 1.8rem;
 }
 .connection_content > p{
-    font-size: 15px;
+    font-size: 1.4rem;
     color: #a8a8a8;
-    margin-top: -10px;
+    margin-top: -1rem;
 }
 .connections_content_button{
-    margin-left: 300px;
+    margin-left: 30rem;
 }
 .connections_content_button > svg{
     position: relative;
-    top: -34px;
-    margin: 0px 0 0px 176px;
-    padding: 5px;
+    top: -3.4rem;
+    margin: 0rem 0 0rem 17.6rem;
+    padding: .5rem;
     border-radius: 50%;
 }
 .connections_content_button > svg:hover{
@@ -56,74 +58,138 @@
     cursor: pointer;
 }
 .message{
-    margin-top: 30px;
-    border-radius: 35px;
-    border: 1px solid rgb(28, 70, 183);
+    margin-top: 3rem;
+    border-radius: 3.5rem;
+    border: .1rem solid rgb(28, 70, 183);
     background-color: white;
     color: rgb(28, 70, 183);
-    width: 7vw;
-    height: 41px;
-    margin-left: 55px;
+    width: 8rem;
+    height: 4.1rem;
+    margin-left: 5.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2px;
-    font-size: 15px;
+    gap: .2rem;
+    font-size: 1.5rem;
 }
 .message:hover{
-    border: 2px solid rgb(28, 70, 183);
+    border: .2rem solid rgb(28, 70, 183);
     background-color: rgb(233, 237, 241);
     cursor: pointer;
 }
 .connections_widget_content{
-    padding: 10px 10px 0 10px;
-    height: 269px;
-    width: 287px;
+    padding: 1rem 1rem 0 1rem;
+    height: 26.9rem;
+    width: 28.7rem;
     background-color: white;
-    margin-left: 1030px;
-    margin-top: -1000px;
-    border-radius: 10px;
+    margin-left: 103rem;
+    margin-top: -100rem;
+    border-radius: 1rem;
 }
 .connections_widget_content > h3{
     font-weight: normal;
-    margin-left: 48px;
+    margin-left: 4.8rem;
 }
 .connections_widget_content > p{
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #a5a5a5;
 }
 .connections_widget_content > input{
-    width: 242px;
-    border: 1px solid #8f8f8f;
+    width: 24.2rem;
+    border: .1rem solid #8f8f8f;
 }
 .connections_widget_content > input:hover{
-    border: 2px solid #808080;
+    border: .2rem solid #808080;
 }
 .continue{
-    margin-top: 20px;
-    border-radius: 35px;
-    border: 1px solid rgb(28, 70, 183);
+    margin-top: 2rem;
+    border-radius: 3.5rem;
+    border: .1rem solid rgb(28, 70, 183);
     background-color: white;
     color: rgb(28, 70, 183);
     width: 7vw;
-    height: 41px;
-    margin-left: 85px;
+    height: 4.1rem;
+    margin-left: 8.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2px;
-    font-size: 15px;
+    gap: .2rem;
+    font-size: 1.5rem;
 }
 .continue:hover{
-    border: 2px solid rgb(28, 70, 183);
+    border: .2rem solid rgb(28, 70, 183);
     background-color: rgb(233, 237, 241);
     cursor: pointer;
 }
 .below_connections_widget{
     
-    margin-left: 1049px;
-    margin-top: -1000px;
+    margin-left: 104.9rem;
+    margin-top: -100rem;
 }
 .connections_footer{
-    margin-top: 500px;
+    margin-top: 70rem;
+}
+/*  */
+.message_popup_activated{
+    scale: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 11;
+}
+.message_popup_deactivated{
+    scale: 0;
+}
+.message_popup_body{
+    background-color: white;
+    border: .1rem solid #ccc;
+    height: 25rem;
+    width: 41rem;
+    position: absolute;
+    top: 23rem;
+    margin-left: 56rem;
+    z-index: 12;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.message_popup_body > button{
+    margin-top: 3rem;
+    border-radius: 3.5rem;
+    border: .1rem solid rgb(28, 70, 183);
+    background-color: white;
+    color: rgb(28, 70, 183);
+    width: 7rem;
+    height: 3rem;
+    margin-left: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+}
+.message_popup_body > button:hover{
+    border: .2rem solid rgb(28, 70, 183);
+    background-color: rgb(233, 237, 241);
+    cursor: pointer;
+}
+
+@media (max-width:500px){
+    .connection_feed_body{
+        margin-left: 0rem;
+    }
+    .message{
+        margin-left: -21.5rem;
+    }
+    .below_connections_widget {
+        margin-left: -1.1rem;
+        margin-top: 10rem;
+    }
+    .message_popup_body{
+        margin-left: 0rem;
+    } 
 }

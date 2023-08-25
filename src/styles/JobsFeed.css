@@ -192,6 +192,8 @@
 }
 .saved_job_check_mark{
     color: rgb(114, 190, 0);
+    height: 1.5rem;
+    width: 1.5rem;
 }
 .saved_job_close{
     margin-left: 9.8rem;
@@ -203,6 +205,98 @@
 .saved_job_close:hover{
     background-color: #f3f2ef;
     cursor: pointer;
+}
+.apply_for_jobs_activated{
+    scale: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 11;
+}
+.apply_for_jobs_deactivated{
+    scale: 0;
+}
+.apply_for_jobs{
+    background-color: white;
+    border: .1rem solid #ccc;
+    height: 25rem;
+    width: 41rem;
+    position: absolute;
+    top: 23rem;
+    margin-left: 56rem;
+    z-index: 12;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.apply_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.apply_buttons > button{
+    margin-top: 3rem;
+    border-radius: 3.5rem;
+    border: .1rem solid rgb(28, 70, 183);
+    background-color: white;
+    color: rgb(28, 70, 183);
+    width: 7rem;
+    height: 3rem;
+    margin-left: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+}
+.apply_buttons > button:hover{
+    border: .2rem solid rgb(28, 70, 183);
+    background-color: rgb(233, 237, 241);
+    cursor: pointer;
+}
+.applied_activated{
+    scale: 1;
+}
+.applied_deactivated{
+    scale: 0;
+}
+.applied_popup{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 5rem;
+    width: 34rem;
+    margin-left: -44.8rem;
+    margin-top: -13rem;
+    border-radius: 1rem;
+    border: .1rem solid #ccc;
+    padding-left: 1rem;
+}
+.appled_job_check_mark{
+    color: rgb(114, 190, 0);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.applied_job_close{
+    margin-left: 9.8rem;
+    padding: .5rem;
+    border-radius: 50%;
+    height: 1.8rem;
+    width: 1.8rem;
+}
+.applied_job_close:hover{
+    background-color: #f3f2ef;
+    cursor: pointer;
+}
+.applied_popup > p{
+    margin-left: 1rem;
+    font-size: 1.6rem;
 }
 
 @media (max-width:500px){
@@ -224,5 +318,9 @@
     }
     .Jobs_feed_recommendation {
         width: 32rem;
+    }
+    .apply_for_jobs{
+        margin-top: 0rem;
+        margin-left: 0rem;
     }
 }
