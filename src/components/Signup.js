@@ -24,7 +24,7 @@ function Signup(){
             localStorage.setItem("emailData",emailInput.current.value);
             localStorage.setItem("passwordData",passwordInput.current.value);
             console.log("Sign up successfull");
-            navigate("/");
+            navigate("/home");
             console.log("It works");
         }
         else{

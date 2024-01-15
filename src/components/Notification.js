@@ -8,7 +8,7 @@ import { IoChatboxEllipses } from "react-icons/io5";
 import { AiFillBell } from "react-icons/ai";
 import { FaUserCircle } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import About from "./About";
 import "../styles/About.css";
 import Header from "./Header";
@@ -17,6 +17,12 @@ import Footer from "./Footer";
 
 
 export default function Notification(){
+  
+    const navigate = useNavigate();
+
+    function gotoHomeFunction(){
+      navigate("/home");
+    }
 
     const [menu, setMenu] = useState(false);
     function handleClick(){
@@ -46,7 +52,7 @@ export default function Notification(){
             <img src="https://img.freepik.com/free-vector/cute-man-working-computer-cartoon-vector-icon-illustration-people-technology-icon-isolated_138676-5717.jpg?w=740&t=st=1690983281~exp=1690983881~hmac=e6007d27f97af4479ed480f7f44ca22c19bd620ebb8ec66a69172199e90fa911"></img>
             <h2>No new notifications</h2>
             <p>View other updates at your Home</p>
-            <Link to="/home"><button className="home_button">Go to Home</button></Link>
+            <button className="home_button" onClick={gotoHomeFunction}>Go to Home</button>
         </div>
         <div className="notification_about">
             <About></About>

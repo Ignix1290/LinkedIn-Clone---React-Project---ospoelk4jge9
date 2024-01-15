@@ -4,7 +4,7 @@ import Post from "./Post";
 import { FaUserCircle } from "react-icons/fa";
 import "../styles/pic.jpg";
 import { AiOutlineClose } from "react-icons/ai";
-
+ 
 function Feed(){
 
     const newPost = useRef();
@@ -16,15 +16,28 @@ function Feed(){
     }
 
     function addPost() {
+
+        //without firebase
         if(newPost.current.value !== ''){
             postTemplate.message = newPost.current.value;
-            // posts.push(postTemplate);
             let updatedPosts = [...posts, postTemplate];
             setPosts(updatedPosts);
             console.log(posts);
             setModal("modal_deactivated");
             document.getElementById("post_textarea").value = '';
         }
+
+        //with firebase
+        // if(newPost.current.value !== ''){
+        //     db.collection("posts").add({
+        //         name:"Samuel lakra",
+        //         description: "LinkedIn Clone",
+        //         message:newPost.current.value,
+        //         timestamp:firebase.firestore.FieldValue.serverTimestamp(),
+        //     });
+        //     setModal("modal_deactivated");
+        //     document.getElementById("post_textarea").value = '';
+        // }
     }
 
     function modalFunction(){

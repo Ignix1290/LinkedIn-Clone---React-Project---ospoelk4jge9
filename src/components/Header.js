@@ -20,23 +20,26 @@ function Header(){
 
     function homeTabFunction(){
         navigate("/home");
-        document.getElementById("home_page").style.color = "black";
     }
 
     function networkTabFunction(){
         navigate("/network");
-        document.getElementById("network_page").style.color = "black";
     }
 
     function jobsTabFunction(){
         navigate("/jobs");
-        document.getElementById("jobs_page").style.color = "black";
     }
 
     function notificationTabFunction(){
         navigate("/notification");
-        document.getElementById("notification_page").style.color = "black";
     }
+
+    // const [isClicked, setIsClicked] = useState(false);
+
+    // function iconClickedFunction(){
+    //     setIsClicked(!isClicked);
+    //     console.log(isClicked);
+    // }
     return (
         <div className="header">
             <div className="header__left">
@@ -50,24 +53,38 @@ function Header(){
                 </div>
 
             </div>
-            <div className="header__right">
-                <div className="header__icons" onClick={homeTabFunction} id="home_page">
+            {/* <div className="header__right">
+                <div className="header__icons" onClick={homeTabFunction}>
                     <AiFillHome></AiFillHome>
                     <p>Home</p>
                 </div>
-                <div className="header__icons" onClick={networkTabFunction} id="network_page">
+                <div className="header__icons" onClick={networkTabFunction}>
                     <ImUsers></ImUsers>
                     <p>My Network</p>
                 </div>
-                <div className="header__icons" onClick={jobsTabFunction} id="jobs_page">
+                <div className="header__icons" onClick={jobsTabFunction}>
+                    <IoBriefcase></IoBriefcase>
+                    <p>Jobs</p>
+                </div> */}
+                <div className="header__right">
+                <div className={`header__icons ${location.pathname === "/home" ? "active" : ""}`} onClick={homeTabFunction}>
+                    <AiFillHome></AiFillHome>
+                    <p>Home</p>
+                </div>
+                <div className={`header__icons ${location.pathname === "/network" ? "active" : ""}`} onClick={networkTabFunction}>
+                    <ImUsers></ImUsers>
+                    <p>My Network</p>
+                </div>
+                <div className={`header__icons ${location.pathname === "/jobs" ? "active" : ""}`} onClick={jobsTabFunction}>
                     <IoBriefcase></IoBriefcase>
                     <p>Jobs</p>
                 </div>
+
                 {/* <div className="header__icons">
                     <IoChatboxEllipses></IoChatboxEllipses>
                     <p>Messaging</p>
                 </div> */}
-                <div className="header__icons" onClick={notificationTabFunction} id="notification_page">
+                <div className={`header__icons ${location.pathname === "/notification" ? "active" : ""}`} onClick={notificationTabFunction}>
                     <AiFillBell></AiFillBell>
                     <p>Notifications</p>
                 </div>

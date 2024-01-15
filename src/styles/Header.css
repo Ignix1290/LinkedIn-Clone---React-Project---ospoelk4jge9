@@ -57,6 +57,7 @@ html{
     margin-right: 33rem;
     margin-bottom: 1rem
 }
+
 .header__icons{
     display: flex;
     height: 4rem;
@@ -78,12 +79,28 @@ html{
 .header__icons > svg:hover{
     color: black;
 }
+/* .header__icons > svg:active{
+    color: black;
+} */
 .header__icons > p{
     margin: 0rem;
     font-size: 1.3rem;
 }
-#home_page:active{
+/* #home_page:active{
     color: black;
+}
+.header__right:first-child .header__icons > svg{
+    color: black;
+} */
+/* .clicked{
+    color: black;
+} */
+.header__icons.active {
+    color: rgb(0, 0, 0); /* Set your desired text color */
+    /* Add any other styles you want for the active state */
+}
+.header__icons.active svg {
+    fill: #000000; /* Set your desired icon color for the active state */
 }
 .header__logo{
     margin-right: 10rem;
